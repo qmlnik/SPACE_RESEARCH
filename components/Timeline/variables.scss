@@ -1,15 +1,10 @@
-$containerHeight: 100px;
-$containerHeightHover: $containerHeight * 1.4;
+$containerHoverAdditionalHeight: 60px;
 $containerTransition: .5s;
 
-$color: rgb(165, 165, 165);
+$inactiveColor: rgb(165, 165, 165);
 
 $stripTransition: .3s;
-$stripHeight: $containerHeightHover / 3;
+$stripHeight: 33.33%;
 
 $dotSize: 20px;
 $dotBorderWidth: 3px;
-$dotConnectClipperWidth: 100px;
-
-$dotConnect1Size: 6000px;
-$dotConnect2Size: 400px;

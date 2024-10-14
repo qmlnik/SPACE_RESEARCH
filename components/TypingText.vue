@@ -86,7 +86,7 @@ $container-padding: 20px;
     position: relative;
     text-transform: uppercase;
     padding: $container-padding;
-    filter: blur(0.75px);
+    //filter: blur(0.75px);
 }
 
 .header-text-container {

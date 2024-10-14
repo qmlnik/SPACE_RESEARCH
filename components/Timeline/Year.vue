@@ -1,46 +1,37 @@
 <template>
     <NuxtLink
-        class="container year-container"
-        :class="[isStrip ? 'strip-container' : null]"
+        class="timeline-container"
+        :class="[isStrip ? 'strip-container' : null, yearContent?.isHighlighted ? 'container-highlighted' : null]"
         :to="`/year/${year}`"
     >
-        <div class="d-flex align-items-center h-100">
-            <div class="year">
+        <div class="py-5 py-md-2 px-2 d-flex">
+            <div
+                class="d-flex align-items-center mx-2"
+                :class="[yearContent?.isHighlighted ? 'text-decoration-underline' : null]"
+                style="width: 3rem;"
+            >
                 {{ year }}
             </div>
-            <div class="dot-container">
-                <template v-if="!isStrip">
+            <div class="dot-line-container">
+                <template v-if="!isStrip">  
                     <div class="dot">
                     </div>
-                    <template v-if="!isLast">
-                        <div class="dot-connect-circle-clipper clipper-1">
-                            <div class="dot-connect-circle"></div>
-                        </div>
-                        <!--<div class="dot-connect-circle-clipper clipper-2">
-                            <div class="dot-connect-circle"></div>
-                        </div>-->
-                    </template>
+                    <div class="line"></div>
                 </template>
             </div>
-        </div>
-        <div class="timeline-text-container">
-            Ez egy teszt szöveg. Legyen valami Apollo 11-es. A Saturn 5 egy 3 fokozatú rakéta volt.
-        </div>
-        <div class="images-container" :style="{ filter: `grayscale(${isStrip ? 0 : 0.8})` }">
-            <div class="image-cropper">
-                <img
-                    src="~/assets/images/patch.png"
-                />
-            </div>
-            <div class="image-cropper">
-                <img
-                    src="~/assets/images/saturn5.jpg"
-                />
-            </div>
-            <div class="image-cropper">
-                <img
-                    src="~/assets/images/apollo-11-thumb.jpg"
-                />
+            <div class="row g-4" style="width: calc(100% - 100px);">
+                <div class="col-md-7 d-flex align-items-center">
+                    {{ yearContent?.text }}
+                </div>
+                <div class="col-md-5 d-flex">
+                    <div
+                        v-for="{ src, caption } in yearContent?.images ?? []"
+                        class="image-cropper"
+                    >
+                        <img :src="src" />
+                        <div class="image-caption">{{ caption }}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </NuxtLink>
@@ -57,9 +48,9 @@ export default {
             type: Boolean,
             required: true
         },
-        isLast: {
-            type: Boolean,
-            default: false
+        yearContent: {
+            type: Object,
+            required: true
         }
     }
 };
@@ -68,153 +59,107 @@ export default {
 <style lang="scss">
 @import "./variables";
 
-@mixin dotConnectCircleMixin($dotConnectSize, $containerHeight) {
-    height: $dotConnectSize;
-    width: $dotConnectSize;
-    left: $dotConnectClipperWidth - (1 - cos(asin(($containerHeight / 2) / ($dotConnectSize / 2)))) * ($dotConnectSize / 2);
-    top: -($dotConnectSize / 2 - $containerHeight / 2);
-}
+.timeline-wrapper {
+    &:hover, &:focus {
+        .timeline-container {
+            padding: $containerHoverAdditionalHeight / 2 0;   
+        }
 
-.year-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    color: $color;
-    padding: 0;
-    align-items: center;
-    background: black;
-
-    .year {
-        width: 50px;
-    }
-
-    .timeline-text-container {
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 20px;
-        position: absolute;
-        left: 100px;
-        z-index: 1;
-        max-width: 70%;
-    }
-
-    .images-container {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: $containerHeight;
-        display: flex;
-        overflow: hidden;
-        justify-content: flex-end;
-        align-items: center;
-        height: calc(100% - 30px);
-
-        .image-cropper {
-            height: $containerHeight * 2;
-            width: $containerHeight * 2;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &:nth-of-type(1) {
-                transform: rotate(-45deg) translate(30%, 30%);
-            }
-
-            &:nth-of-type(2) {
-                transform: rotate(-45deg) translate(15%, 15%);
-            }
-
-            &:nth-of-type(3) {
-                transform: rotate(-45deg) translate(0, 0);
-            }
-
-            img {
-                transform: rotate(45deg);
-                height: 200%;
-                width: auto;
-            }
+        .dot {
+            border-color: white !important;
         }
     }
 
-    .dot-container {
+    &:first-of-type .line {
+        height: 50% !important;
+        background: linear-gradient(to bottom, white, grey) !important;
+        top: 50%;
+    }
+
+    &:last-of-type .line {
+        height: 50% !important;
+        background: linear-gradient(to bottom, grey, white) !important;
+        bottom: 50%;
+    }
+}
+
+.timeline-container {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.1rem;
+    color: $inactiveColor;
+    background: black;
+    transition: $containerTransition;
+
+    .image-cropper {
+        width: 50%;
+        height: 150px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        filter: grayscale(0.6);
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            background: black;
+            width: 100%;
+            text-align: center;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .dot-line-container {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 20px;
-        position: relative;
 
         .dot {
-            width: $dotSize;
-            height: $dotSize;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
-            border: $dotBorderWidth solid $color;
+            border: 2px solid $inactiveColor;
             position: absolute;
             background: black;
-            z-index: 4;
+            z-index: 3;
         }
 
-        .dot-connect-circle-clipper {
+        .line {
             position: absolute;
-            top: 0;
-            right: 0;
-            height: $containerHeight;
-            width: $dotConnectClipperWidth;
-            overflow: hidden;
+            height: 100%;
+            width: 2px;
             transition: $containerTransition;
-            z-index: 3;
-
-            .dot-connect-circle {
-                border-radius: 50%;
-                border: 1px solid $color;
-                position: absolute;
-                z-index: 1;
-                transition: $containerTransition;            
-            }
-
-            &.clipper-1 {
-                .dot-connect-circle {
-                    @include dotConnectCircleMixin($dotConnect1Size, $containerHeight);
-                }
-            }
-
-            &.clipper-2 {
-                .dot-connect-circle {
-                    @include dotConnectCircleMixin($dotConnect2Size, $containerHeight);
-                }        
-            }
+            z-index: 2;
+            background: linear-gradient(to bottom, grey, white 50%, grey);
         }
     }
 
     &.strip-container {
-        font-size: 1.1rem;
+        padding: 0 !important;
+        font-size: 1.2rem;
         color: white;
 
         .image-cropper {
-            height: $containerHeightHover * 2;
-            width: $containerHeightHover * 2;
+            height: calc(150px + $containerHoverAdditionalHeight);
+            filter: grayscale(0);
         }
     }
-}
 
-.timeline-year-container:hover, .timeline-year-container:has(+ .timeline-year-container:hover) {
-    .dot-connect-circle-clipper {
-        height: $containerHeightHover / 2 + $containerHeight / 2;
+    &.container-highlighted {
+        font-size: 1.2rem;
 
-        &.clipper-1 .dot-connect-circle {
-            @include dotConnectCircleMixin($dotConnect1Size, $containerHeightHover / 2 + $containerHeight / 2);
+        &.strip-container {
+            font-size: 1.3rem;
         }
-
-        &.clipper-2 .dot-connect-circle {
-            @include dotConnectCircleMixin($dotConnect2Size, $containerHeightHover / 2 + $containerHeight / 2);
-        }
-    }
-}
-
-.timeline-year-container:nth-child(odd) {
-    .dot-connect-circle-clipper {
-        transform: rotate(180deg);
-        transform-origin: right;
     }
 }
 </style>

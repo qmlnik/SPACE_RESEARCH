@@ -185,7 +185,7 @@ export default {
                     isHighlighted: false
                 },
                 1966: {
-                    text: "USA első dokkolás.",
+                    text: "USA első dokkolás..",
                     images: [
                     ],
                     isHighlighted: false

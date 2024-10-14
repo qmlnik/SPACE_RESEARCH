@@ -119,6 +119,7 @@ export default {
     position: absolute;
     bottom: 25%;
     z-index: 1;
+    text-align: center;
 }
 
 .scroll-indicator-container {

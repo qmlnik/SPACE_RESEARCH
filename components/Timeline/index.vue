@@ -60,6 +60,10 @@ import img_1963_tyereskova from "~/assets/images/timeline/1963/tyereskova.jpg";
 import img_1963_Mars_1 from "~/assets/images/timeline/1963/Mars_1.jpg";
 import img_1964_ranger_7_first_image from "~/assets/images/timeline/1964/ranger_7_first_image.webp";
 import img_1964_voszhod_1 from "~/assets/images/timeline/1964/voszhod_1.jpeg";
+import img_1965_first_spacewalk from "~/assets/images/timeline/1965/first_spacewalk.webp";
+import img_1965_first_mars_picture from "~/assets/images/timeline/1965/first_mars_picture.webp";
+import img_1966_gemini_8_docking from "~/assets/images/timeline/1966/gemini_8_docking.webp";
+import img_1966_Luna_10 from "~/assets/images/timeline/1966/Luna_10.jpg";
 
 export default {
     data() {
@@ -178,20 +182,37 @@ export default {
                     ],
                     isHighlighted: false
                 },
+                // tömlős csatlakozó
                 1965: {
-                    text: "Mariner Mars szonda.",
+                    text: "A szovjet Alexei Leonov elvégzi az első űrsétát, aminél több mint 12 percig volt a világűrben a Voszhod-2-höz csatlakoztatva. Nem sokra rá az első amerikai űrséta is megtörténik, ami 36 percig tartott. Az amerikai Mariner-4 űrszonda elkészíti az első képet egy másik bolygó felszínéről, a Marséról.",
                     images: [
+                        {
+                            src: img_1965_first_spacewalk,
+                            caption:  "első űrséta"
+                        },
+                        {
+                            src: img_1965_first_mars_picture,
+                            caption:  "Mariner-4 első képe"
+                        },
                     ],
                     isHighlighted: false
                 },
                 1966: {
-                    text: "USA első dokkolás..",
+                    text: "Holdraszállásra készülve a Gemini-8 küldetésen Neil Armstrong és David Scott elsőként dokkol a világűrben egy másik űrjárműhöz, az Agenához. A szovjet Luna-10 űrszonda sikeresen pályára áll a Hold körül, ezáltal az első műholddá válik egy másik égitest körül.",
                     images: [
+                        {
+                            src: img_1966_gemini_8_docking,
+                            caption:  "Agena"
+                        },
+                        {
+                            src: img_1966_Luna_10,
+                            caption:  "Luna-10"
+                        },
                     ],
                     isHighlighted: false
                 },
                 1967: {
-                    text: "Szojuz-1 szerencsétlenség. Apollo-1 tragédiája. A földi teszt során tűz ütött ki a pilótafülkében, aminek három halálos áldozata lett, köztük Gus Grissom a második amerikai űrhajós.",
+                    text: "Szojuz-1 és Apollo-1 tragédiák.",
                     images: [
                     ],
                     isHighlighted: false

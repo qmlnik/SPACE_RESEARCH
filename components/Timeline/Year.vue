@@ -1,7 +1,7 @@
 <template>
     <NuxtLink
-        class="timeline-container"
-        :class="[isStrip ? 'strip-container' : null, yearContent?.isHighlighted ? 'container-highlighted' : null]"
+        class="year-container"
+        :class="[isActive ? 'active-container' : null, yearContent?.isHighlighted ? 'highlighted-container' : null]"
         :to="`/year/${year}`"
     >
         <div class="py-5 py-md-2 px-2 d-flex">
@@ -13,7 +13,7 @@
                 {{ year }}
             </div>
             <div class="dot-line-container">
-                <template v-if="!isStrip">  
+                <template v-if="isShowDotLine">  
                     <div class="dot">
                     </div>
                     <div class="line"></div>
@@ -44,7 +44,11 @@ export default {
             type: Number,
             required: true
         },
-        isStrip: {
+        isActive: {
+            type: Boolean,
+            required: true
+        },
+        isShowDotLine: {
             type: Boolean,
             required: true
         },
@@ -57,11 +61,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/node_modules/bootstrap/scss/functions";
+@import "~/node_modules/bootstrap/scss/variables";
+@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
+
 @import "./variables";
 
 .timeline-wrapper {
     &:hover, &:focus {
-        .timeline-container {
+        .year-container {
             padding: $containerHoverAdditionalHeight / 2 0;   
         }
 
@@ -83,13 +91,18 @@ export default {
     }
 }
 
-.timeline-container {
+.year-container {
     display: inline-block;
     width: 100%;
     font-size: 1.1rem;
     color: $inactiveColor;
-    background: black;
     transition: $containerTransition;
+    background: black;
+
+    @include media-breakpoint-down(md) {
+        background: transparent;
+    }
+
 
     .image-cropper {
         width: 50%;
@@ -143,7 +156,7 @@ export default {
         }
     }
 
-    &.strip-container {
+    &.active-container {
         padding: 0 !important;
         font-size: 1.2rem;
         color: white;
@@ -154,10 +167,10 @@ export default {
         }
     }
 
-    &.container-highlighted {
+    &.highlighted-container {
         font-size: 1.2rem;
 
-        &.strip-container {
+        &.active-container {
             font-size: 1.3rem;
         }
     }

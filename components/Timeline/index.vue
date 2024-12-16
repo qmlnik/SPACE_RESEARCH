@@ -1,42 +1,56 @@
 <template>
     <div class="d-flex justify-content-center">
-        <div class="d-inline-block fs-3 p-3" style="background: black;">
+        <div class="timeline-container">
             <h1 class="text-center pb-3">Idővonal</h1>
             <div
                 v-for="(_, currentYear) in (CONFIG.TIMELINE_END_YEAR - CONFIG.TIMELINE_START_YEAR + 1)"
                 class="timeline-wrapper timeline-wrapper-size"
             >
-                <TimelineYear
-                    :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                    :is-strip="false"
-                    :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                />
-                <div class="timeline-strip">
-                    <div class="timeline-wrapper-size timeline-strip-position-correction">
-                        <TimelineYear
-                            :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                            :is-strip="true"
-                            :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                        />
+                <div class="d-none d-md-block">
+                    <TimelineYear
+                        :year="currentYear + CONFIG.TIMELINE_START_YEAR"
+                        :is-active="false"
+                        :is-show-dot-line="true"
+                        :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
+                    />
+                    <div class="timeline-strip">
+                        <div class="timeline-wrapper-size timeline-strip-position-correction">
+                            <TimelineYear
+                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
+                                :is-active="true"
+                                :is-show-dot-line="false"
+                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
+                            />
+                        </div>
+                    </div>
+                    <div class="timeline-strip">
+                        <div class="timeline-wrapper-size timeline-strip-position-correction">
+                            <TimelineYear
+                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
+                                :is-active="true"
+                                :is-show-dot-line="false"
+                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
+                            />
+                        </div>
+                    </div>
+                    <div class="timeline-strip">
+                        <div class="timeline-wrapper-size timeline-strip-position-correction">
+                            <TimelineYear
+                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
+                                :is-active="true"
+                                :is-show-dot-line="false"
+                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
+                            />
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-strip">
-                    <div class="timeline-wrapper-size timeline-strip-position-correction">
-                        <TimelineYear
-                            :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                            :is-strip="true"
-                            :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                        />
-                    </div>
-                </div>
-                <div class="timeline-strip">
-                    <div class="timeline-wrapper-size timeline-strip-position-correction">
-                        <TimelineYear
-                            :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                            :is-strip="true"
-                            :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                        />
-                    </div>
+                <div class="d-block d-md-none">
+                    <TimelineYear
+                        :year="currentYear + CONFIG.TIMELINE_START_YEAR"
+                        :is-active="true"
+                        :is-show-dot-line="true"
+                        :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
+                    />
                 </div>
             </div>
         </div>
@@ -319,6 +333,16 @@ export default {
 @import "~/node_modules/bootstrap/scss/mixins/breakpoints";
 
 @import "./variables";
+
+.timeline-container {
+    display: inline-block;
+    padding: 1rem;
+    background: black;
+
+    @include media-breakpoint-down(md) {
+        background: transparent;
+    }
+}
 
 .timeline-wrapper-size {
     width: map-get($container-max-widths, xxl);

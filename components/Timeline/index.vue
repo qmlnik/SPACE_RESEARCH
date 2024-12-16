@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex justify-content-center">
         <div class="d-inline-block fs-3 p-3" style="background: black;">
-            <h1 class="text-center pb-3">Évek</h1>
+            <h1 class="text-center pb-3">Idővonal</h1>
             <div
                 v-for="(_, currentYear) in (CONFIG.TIMELINE_END_YEAR - CONFIG.TIMELINE_START_YEAR + 1)"
                 class="timeline-wrapper timeline-wrapper-size"
@@ -61,9 +61,21 @@ import img_1963_Mars_1 from "~/assets/images/timeline/1963/Mars_1.jpg";
 import img_1964_ranger_7_first_image from "~/assets/images/timeline/1964/ranger_7_first_image.webp";
 import img_1964_voszhod_1 from "~/assets/images/timeline/1964/voszhod_1.jpeg";
 import img_1965_first_spacewalk from "~/assets/images/timeline/1965/first_spacewalk.webp";
-import img_1965_first_mars_picture from "~/assets/images/timeline/1965/first_mars_picture.webp";
+import img_1965_gemini_6_gemini_7 from "~/assets/images/timeline/1965/gemini_6_gemini_7.jpg";
 import img_1966_gemini_8_docking from "~/assets/images/timeline/1966/gemini_8_docking.webp";
-import img_1966_Luna_10 from "~/assets/images/timeline/1966/Luna_10.jpg";
+import img_1966_luna_9 from "~/assets/images/timeline/1966/luna_9.webp";
+import img_1967_Vladimir_Komarov from "~/assets/images/timeline/1967/Vladimir_Komarov.jpg";
+import img_1967_apollo_1 from "~/assets/images/timeline/1967/apollo_1.webp";
+import img_1968_apollo_7 from "~/assets/images/timeline/1968/apollo_7.jpg";
+import img_1968_apollo_8_foldfelkelte from "~/assets/images/timeline/1968/apollo_8_foldfelkelte.jpg";
+import img_1969_apollo_11 from "~/assets/images/timeline/1969/apollo_11.jpg";
+import img_1969_apollo_11_crew from "~/assets/images/timeline/1969/apollo_11_crew.webp";
+import img_1970_apollo_13 from "~/assets/images/timeline/1970/apollo_13.webp";
+import img_1970_lunohod_1 from "~/assets/images/timeline/1970/lunohod_1.jpg";
+import img_1971_rover from "~/assets/images/timeline/1971/rover.jpg";
+import img_1971_szaljut_1 from "~/assets/images/timeline/1971/szaljut_1.jpg";
+import img_1972_apollo_17_orange_soil from "~/assets/images/timeline/1972/apollo_17_orange_soil.jpg";
+import img_1972_apollo_17_sample from "~/assets/images/timeline/1972/apollo_17_sample.webp";
 
 export default {
     data() {
@@ -182,50 +194,122 @@ export default {
                     ],
                     isHighlighted: false
                 },
-                // tömlős csatlakozó
                 1965: {
-                    text: "A szovjet Alexei Leonov elvégzi az első űrsétát, aminél több mint 12 percig volt a világűrben a Voszhod-2-höz csatlakoztatva. Nem sokra rá az első amerikai űrséta is megtörténik, ami 36 percig tartott. Az amerikai Mariner-4 űrszonda elkészíti az első képet egy másik bolygó felszínéről, a Marséról.",
+                    text: "A szovjet Alexei Leonov elvégzi az első űrsétát, aminél több mint 12 percig volt a világűrben a Voszhod-2 légzsilipéhez volt csatlakoztatva köldökzsinóron keresztül. Nem sokra rá az első amerikai űrséta is megtörténik a Gemini-4-el, ami 36 percig tartott. Amerikai oldalon sikerül az első űrrandevú a Gemini-6 és a Gemini-7 űrhajók között, legkisebb távolság 30cm közöttük.",
                     images: [
                         {
                             src: img_1965_first_spacewalk,
                             caption:  "első űrséta"
                         },
                         {
-                            src: img_1965_first_mars_picture,
-                            caption:  "Mariner-4 első képe"
+                            src: img_1965_gemini_6_gemini_7,
+                            caption:  "Gemini-7 a Gemini-6-ról"
                         },
                     ],
                     isHighlighted: false
                 },
                 1966: {
-                    text: "Holdraszállásra készülve a Gemini-8 küldetésen Neil Armstrong és David Scott elsőként dokkol a világűrben egy másik űrjárműhöz, az Agenához. A szovjet Luna-10 űrszonda sikeresen pályára áll a Hold körül, ezáltal az első műholddá válik egy másik égitest körül.",
+                    text: "Holdraszállásra készülve a Gemini-8 küldetésen Neil Armstrong és David Scott elsőként dokkol a világűrben egy másik űrjárműhöz, az Agenához. A szovjet Luna-9 elsőként sikeresen végez puha landolást a Holdon és készít képeket közvetlen a felszínéről, a Luna-10 pedig pályára áll a Hold körül, ezáltal az első műholddá válik egy másik égitest körül.",
                     images: [
                         {
                             src: img_1966_gemini_8_docking,
                             caption:  "Agena"
                         },
                         {
-                            src: img_1966_Luna_10,
-                            caption:  "Luna-10"
+                            src: img_1966_luna_9,
+                            caption:  "Luna-9"
                         },
                     ],
                     isHighlighted: false
                 },
                 1967: {
-                    text: "Szojuz-1 és Apollo-1 tragédiák.",
+                    text: "Szojuz-1 és Apollo-1 tragédiák. Előbbinél visszatéréskor nem nyílik ki a fő fékezőernyő, így Vlagyimir Mihajlovics Komarov a becsapódás során elhunyt. Utóbbinál egy földi teszt során tűz üt ki az űrhajó kabinjában, aminek következtében Edward White, Gus Grissom és Roger Chaffee életüket vesztik. Az Apollo-4-el sikeresen tesztelik ember nélkül a Saturn V rakétát és az Apollo űrhajót földkörüli pályán.",
                     images: [
+                        {
+                            src: img_1967_Vladimir_Komarov,
+                            caption:  "Vlagyimir Mihajlovics Komarov"
+                        },
+                        {
+                            src: img_1967_apollo_1,
+                            caption:  "Edward White, Gus Grissom és Roger Chaffee"
+                        }
+                    ],
+                    isHighlighted: false
+                },
+                1968: {
+                    text: "Az amerikaiak elvégzik az első emberes Apollo küldetésüket, az Apollo-7-et a Saturn IB hordozórakétával, ami során földkörüli pályán gyakorolják a későbbi holdkomppal való űrrandevút, valamint az Apollo-8-at (már Saturn V-el), aminél pedig holdkomp nélkül megkerülik a Holdat, elsőként embert juttatva az égitesthez. Eközben a szovjet Zond-5 űrszonda Holdhoz juttatja az első élőlényeket (4 teknőst), és a Szojuz-2 és 3 holdraszállást előkészítve űrrandevút kísérelnek meg sikertelenül.",
+                    images: [
+                        {
+                            src: img_1968_apollo_7,
+                            caption:  "Apollo-7"
+                        },
+                        {
+                            src: img_1968_apollo_8_foldfelkelte,
+                            caption:  "Apollo-8 Földkelte"
+                        }
+                    ],
+                    isHighlighted: false
+                },
+                1969: {
+                    text: "Július 20-án az Apollo-11 küldetésen Neil Armstrong a Hold felszínére lép, első emberként a történelemben. Az Apollo-9 során földkörüli pályán tesztelik elsősorban a holdkompot és a hozzávaló dokkolást, másodsorban az új, köldökzsinór nélküli űrruhát. Az Apollo-10 a Holdra szállás főpróbája, minden úgy zajlik, mint a későbbi holdraszállásnál, viszont a holdkomppal leszállás helyett csak 14.5 kilóméterre közelítik meg a Holdat. Az Apollo-11-el Neil Armstrong, Buzz Aldrin és Michael Collins július 16-án indulnak útnak és 20-án érnek célba. Amstrong után Aldrin lép a Hold felszínére, eközben Collins holdkörüli pályán várakozik. Összesen 2 és fél órát töltenek az égitesten. Az Apollo-12 célja a leszállás helyének pontosítása, aminek céljául a korábban felküldött Surveyor-3 űrszondát jelölik ki. Eközben a szovjetek kétszer tesztelik az N1 holdrakétájukat, mindkét alkalommal sikertelenül.",                    images: [
+                        {
+                            src: img_1969_apollo_11,
+                            caption:  "Apollo-11 holdraszállás"
+                        },
+                        {
+                            src: img_1969_apollo_11_crew,
+                            caption:  "Neil Armstrong, Michael Collins és Buzz Aldrin"
+                        }
+                    ],
+                    isHighlighted: true
+                },
+                1970: {
+                    text: "Az Apollo-13 odaútja során felrobban az űrhajó szervíz moduljában egy oxigéntartály, ami következtében megsérülnek az üzemanyagcellák és biztonsági okokból inkább nem kísérlik meg bekapcsolni a hajtóművet. A holdraszállásról lemondanak és végül csak hajszál híján menekülnek meg. A baleset nyomán törlik az Apollo-18, 19 és 20 küldetéseket. A szovjetek eljuttatják az első rovert a Holdra, a Lunokhod-1-et, ahol majd egy évig üzemelt, több mint 10 kilómétert megtéve.",
+                    images: [
+                        {
+                            src: img_1970_apollo_13,
+                            caption:  "Apollo-13 visszatérés után"
+                        },
+                        {
+                            src: img_1970_lunohod_1,
+                            caption:  "Lunokhod-1"
+                        }
                     ],
                     isHighlighted: false
                 },
                 1971: {
-                    text: "Szovjet Marsz-3 űrszonda első landolás más bolygón.",
+                    text: "Az amerikaiak holdralépésével a szovjetek feladják a versenyt és az űrállomások fejlesztését tűzik ki célul, így készítik el a világon az elsőt, a Szaljut-1-et. Első sikeres dokkolás a Szojuz-11-é, a legénység 3 hetet tölt az űrállomáson. A visszatérésükkor azonban túl korán nyílik ki a nyomáskiegyenlítő szelep, megszökik a levegő és a három űrhajós életét veszti. A szovjet Marsz-3 sikeresen hajt végre puha landolást a Marson, elsőként más bolygón. Az Apollo-14 során Alan Shepard betegségéből felépülve ismét kijut az űrbe, az Apollo-15 alatt pedig először vetik be a holdjárót, aminek segítségével majdnem 28 kilómétert tettek meg (a jármű megépítéséért felelős műszaki csoport igazgatója Pavlics Ferenc magyar származású gépészmérnök volt).",
                     images: [
+                        {
+                            src: img_1971_szaljut_1,
+                            caption:  "Szaljut-1"
+                        },
+                        {
+                            src: img_1971_rover,
+                            caption:  "holdjáró"
+                        }
+                    ],
+                    isHighlighted: false
+                },
+                1972: {
+                    text: "Az Apollo-16 és 17 küldetések során vulkáni kőzetek begyűjtése volt a cél, viszont egyik során sem találtak (a 17-nél egyszer narancssárgás talajra bukkantak, de később kiderült, hogy nem vulkanikus eredetű). Az utóbbi több rekordot is elért: több mint három felszínen töltött nap, 110 kiló begysűjtött minta, 30.5 megtett kilóméter a holdjáróval, első civil (geológus) a Hold felszínén: Harrison Schmitt.",
+                    images: [
+                        {
+                            src: img_1972_apollo_17_orange_soil,
+                            caption:  "narancssárgás talaj"
+                        },
+                        {
+                            src: img_1972_apollo_17_sample,
+                            caption:  "Apollo-17 mintagyűjtés"
+                        }
                     ],
                     isHighlighted: false
                 }
             }
         };
     }
+
+    //szaljut 7 film
 }
 </script>
 

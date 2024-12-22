@@ -12,14 +12,14 @@ export default {
         };
     },
     mounted() {
-        this.engine = new Engine(this.$refs.canvas, this.emitAllPlanetLoaded);
+        this.engine = new Engine(this.$refs.canvas, this.emitAssetsLoaded);
     },
     unmounted() {
         this.engine.stopRendering();
     },
     methods: {
-        emitAllPlanetLoaded() {
-            this.$emit("allPlanetLoaded");
+        emitAssetsLoaded() {
+            this.$emit("assetsLoaded");
         },
         startRendering() {
             this.engine.startRendering();

@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.5",
     "nuxt": "^3.13.0",
     "three": "^0.169.0",
     "vue": "latest",
+    "vue-dragscroll": "^4.0.6",
     "vue-router": "latest"
   }
 }

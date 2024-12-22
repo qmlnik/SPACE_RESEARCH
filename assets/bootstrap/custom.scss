@@ -23,14 +23,26 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/buttons";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // own
 @import "./typography";
+@import "./icons-imports";
+
+//a nuxt root div-je is felvegye a 100%-ot
+html, body, body > div:first-of-type {
+    height: 100%;
+}
+
 
 a {
     text-decoration: none;
+}
+
+.backdrop {
+    background: rgba(0, 0, 0, 0.7);
 }
 

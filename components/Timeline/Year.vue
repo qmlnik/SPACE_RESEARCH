@@ -4,7 +4,7 @@
         :class="[isActive ? 'active-container' : null, yearContent?.isHighlighted ? 'highlighted-container' : null]"
         :to="`/year/${year}`"
     >
-        <div class="py-5 py-md-2 px-2 d-flex">
+        <div class="py-5 py-md-2 px-3 d-flex">
             <div
                 class="d-flex align-items-center mx-2"
                 :class="[yearContent?.isHighlighted ? 'text-decoration-underline' : null]"
@@ -20,16 +20,23 @@
                 </template>
             </div>
             <div class="row g-4" style="width: calc(100% - 100px);">
-                <div class="col-md-7 d-flex align-items-center">
+                <div class="col-md-7">
                     {{ yearContent?.text }}
                 </div>
-                <div class="col-md-5 d-flex">
-                    <div
-                        v-for="{ src, caption } in yearContent?.images ?? []"
-                        class="image-cropper"
-                    >
-                        <img :src="src" />
-                        <div class="image-caption">{{ caption }}</div>
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="row g-4 g-md-0 w-100">
+                        <div
+                            v-for="{ src, caption } in yearContent?.images ?? []"
+                            class="image-container col-md-6 overflow-hidden d-flex align-items-center justify-content-center flex-column"
+                        >
+                            <img :src="src" :alt="src.split('/').at(-1)" />
+                            <div
+                                class="image-caption w-100 text-center"
+                                style="background: black; padding: 0.2rem; font-size: 0.8rem;"
+                            >
+                                {{ caption }}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,7 +85,7 @@ export default {
         }
     }
 
-    &:first-of-type .line {
+    &:nth-child(2) .line {
         height: 50% !important;
         background: linear-gradient(to bottom, white, grey) !important;
         top: 50%;
@@ -104,29 +111,27 @@ export default {
     }
 
 
-    .image-cropper {
-        width: 50%;
+    .image-container {
         height: 150px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         filter: grayscale(0.6);
 
         img {
             height: 100%;
             width: auto;
+
+            @include media-breakpoint-down(md) {
+                height: auto; 
+                width: 100%;
+            }
         }
 
         .image-caption {
             position: absolute;
             bottom: 0;
-            background: black;
-            width: 100%;
-            text-align: center;
-            padding: 0.2rem;
-            font-size: 0.8rem;
+
+            @include media-breakpoint-down(md) {
+                position: relative;
+            }
         }
     }
 
@@ -161,9 +166,13 @@ export default {
         font-size: 1.2rem;
         color: white;
 
-        .image-cropper {
+        .image-container {
             height: calc(150px + $containerHoverAdditionalHeight);
             filter: grayscale(0);
+
+            @include media-breakpoint-down(md) {
+                height: auto; 
+            }
         }
     }
 

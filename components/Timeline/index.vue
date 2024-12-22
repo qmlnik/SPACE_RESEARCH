@@ -1,56 +1,87 @@
 <template>
     <div class="d-flex justify-content-center">
-        <div class="timeline-container">
+        <div class="timeline-container timeline-wrapper-size">
             <h1 class="text-center pb-3">Idővonal</h1>
             <div
-                v-for="(_, currentYear) in (CONFIG.TIMELINE_END_YEAR - CONFIG.TIMELINE_START_YEAR + 1)"
-                class="timeline-wrapper timeline-wrapper-size"
+                ref="timelineYearContainer"
+                class="mt-4 position-relative"
+                style="padding-top: 75px; width: inherit;"
             >
-                <div class="d-none d-md-block">
-                    <TimelineYear
-                        :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                        :is-active="false"
-                        :is-show-dot-line="true"
-                        :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                    />
-                    <div class="timeline-strip">
-                        <div class="timeline-wrapper-size timeline-strip-position-correction">
-                            <TimelineYear
-                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                                :is-active="true"
-                                :is-show-dot-line="false"
-                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                            />
-                        </div>
-                    </div>
-                    <div class="timeline-strip">
-                        <div class="timeline-wrapper-size timeline-strip-position-correction">
-                            <TimelineYear
-                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                                :is-active="true"
-                                :is-show-dot-line="false"
-                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                            />
-                        </div>
-                    </div>
-                    <div class="timeline-strip">
-                        <div class="timeline-wrapper-size timeline-strip-position-correction">
-                            <TimelineYear
-                                :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                                :is-active="true"
-                                :is-show-dot-line="false"
-                                :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                            />
+                <div
+                    :class="[isTimelineNavigationPositionFixed ? 'position-fixed' : null]"
+                    class="position-absolute d-flex justify-content-center"
+                    style="background: black; height: 65px; width: inherit; top: 0; z-index: 4;" 
+                >
+                    <div
+                        v-dragscroll
+                        @dragscrollstart="dragStart"
+                        @dragscrollend="dragStop"
+                        class="timeline-navigation-container overflow-x-auto overflow-y-visible h-100 px-3"
+                        style="white-space: nowrap;"
+                    >
+                        <div
+                            v-for="currentYear in Object.keys(timelineContent)"
+                            @mouseup="scrollToYear(currentYear)"
+                            class="px-3 d-inline-block h-100"
+                            style="user-select: none; cursor: pointer;"
+                        >
+                            <div class="d-flex align-items-center h-100">
+                                {{ currentYear }}
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-block d-md-none">
-                    <TimelineYear
-                        :year="currentYear + CONFIG.TIMELINE_START_YEAR"
-                        :is-active="true"
-                        :is-show-dot-line="true"
-                        :year-content="timelineContent[currentYear + CONFIG.TIMELINE_START_YEAR]"
-                    />
+                <div
+                    v-for="[currentYear, yearContent] in Object.entries(timelineContent)"
+                    class="timeline-wrapper"
+                >
+                    <div :id="`TimelineYear${currentYear}`" style="position: relative; top: -100px;"></div>
+                    <div class="d-none d-md-block">
+                        <TimelineYear
+                            :year="currentYear"
+                            :is-active="false"
+                            :is-show-dot-line="true"
+                            :year-content="yearContent"
+                        />
+                        <div class="timeline-strip">
+                            <div class="timeline-wrapper-size timeline-strip-position-correction">
+                                <TimelineYear
+                                    :year="currentYear"
+                                    :is-active="true"
+                                    :is-show-dot-line="false"
+                                    :year-content="yearContent"
+                                />
+                            </div>
+                        </div>
+                        <div class="timeline-strip">
+                            <div class="timeline-wrapper-size timeline-strip-position-correction">
+                                <TimelineYear
+                                    :year="currentYear"
+                                    :is-active="true"
+                                    :is-show-dot-line="false"
+                                    :year-content="yearContent"
+                                />
+                            </div>
+                        </div>
+                        <div class="timeline-strip">
+                            <div class="timeline-wrapper-size timeline-strip-position-correction">
+                                <TimelineYear
+                                    :year="currentYear"
+                                    :is-active="true"
+                                    :is-show-dot-line="false"
+                                    :year-content="yearContent"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none">
+                        <TimelineYear
+                            :year="currentYear"
+                            :is-active="true"
+                            :is-show-dot-line="true"
+                            :year-content="yearContent"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,42 +89,45 @@
 </template>
 
 <script>
-import img_1957_sputnik_asm from "~/assets/images/timeline/1957/sputnik_asm.webp";
-import img_1957_Laika from "~/assets/images/timeline/1957/Laika.webp";
-import img_1958_nasa_logo from "~/assets/images/timeline/1958/nasa_logo.webp";
-import img_1958_explorer_1 from "~/assets/images/timeline/1958/explorer_1.webp";
-import img_1959_Luna_3_moon from "~/assets/images/timeline/1959/Luna_3_moon.webp";
-import img_1959_luna_1 from "~/assets/images/timeline/1959/luna_1.jpg";
-import img_1960_belka_strelka from "~/assets/images/timeline/1960/belka_strelka.webp";
-import img_1960_tiros_1 from "~/assets/images/timeline/1960/tiros_1.webp";
-import img_1961_jurij_gagarin from "~/assets/images/timeline/1961/jurij_gagarin.jpg";
-import img_1961_alan_shepard from "~/assets/images/timeline/1961/alan_shepard.webp";
-import img_1962_john_glenn from "~/assets/images/timeline/1962/john_glenn.jpg";
-import img_1962_we_choose_to_go_to_the_moon from "~/assets/images/timeline/1962/we_choose_to_go_to_the_moon.jpg";
-import img_1963_tyereskova from "~/assets/images/timeline/1963/tyereskova.jpg";
-import img_1963_Mars_1 from "~/assets/images/timeline/1963/Mars_1.jpg";
-import img_1964_ranger_7_first_image from "~/assets/images/timeline/1964/ranger_7_first_image.webp";
-import img_1964_voszhod_1 from "~/assets/images/timeline/1964/voszhod_1.jpeg";
-import img_1965_first_spacewalk from "~/assets/images/timeline/1965/first_spacewalk.webp";
-import img_1965_gemini_6_gemini_7 from "~/assets/images/timeline/1965/gemini_6_gemini_7.jpg";
-import img_1966_gemini_8_docking from "~/assets/images/timeline/1966/gemini_8_docking.webp";
-import img_1966_luna_9 from "~/assets/images/timeline/1966/luna_9.webp";
-import img_1967_Vladimir_Komarov from "~/assets/images/timeline/1967/Vladimir_Komarov.jpg";
-import img_1967_apollo_1 from "~/assets/images/timeline/1967/apollo_1.webp";
-import img_1968_apollo_7 from "~/assets/images/timeline/1968/apollo_7.jpg";
-import img_1968_apollo_8_foldfelkelte from "~/assets/images/timeline/1968/apollo_8_foldfelkelte.jpg";
-import img_1969_apollo_11 from "~/assets/images/timeline/1969/apollo_11.jpg";
-import img_1969_apollo_11_crew from "~/assets/images/timeline/1969/apollo_11_crew.webp";
-import img_1970_apollo_13 from "~/assets/images/timeline/1970/apollo_13.webp";
-import img_1970_lunohod_1 from "~/assets/images/timeline/1970/lunohod_1.jpg";
-import img_1971_rover from "~/assets/images/timeline/1971/rover.jpg";
-import img_1971_szaljut_1 from "~/assets/images/timeline/1971/szaljut_1.jpg";
-import img_1972_apollo_17_orange_soil from "~/assets/images/timeline/1972/apollo_17_orange_soil.jpg";
-import img_1972_apollo_17_sample from "~/assets/images/timeline/1972/apollo_17_sample.webp";
+import img_1957_sputnik_asm from "~/assets/images/timeline_final/1957/sputnik_asm.webp";
+import img_1957_Laika from "~/assets/images/timeline_final/1957/Laika.webp";
+import img_1958_nasa_logo from "~/assets/images/timeline_final/1958/nasa_logo.webp";
+import img_1958_explorer_1 from "~/assets/images/timeline_final/1958/explorer_1.webp";
+import img_1959_Luna_3_moon from "~/assets/images/timeline_final/1959/Luna_3_moon.webp";
+import img_1959_luna_1 from "~/assets/images/timeline_final/1959/luna_1.webp";
+import img_1960_belka_strelka from "~/assets/images/timeline_final/1960/belka_strelka.webp";
+import img_1960_tiros_1 from "~/assets/images/timeline_final/1960/tiros_1.webp";
+import img_1961_jurij_gagarin from "~/assets/images/timeline_final/1961/jurij_gagarin.webp";
+import img_1961_alan_shepard from "~/assets/images/timeline_final/1961/alan_shepard.webp";
+import img_1962_john_glenn from "~/assets/images/timeline_final/1962/john_glenn.webp";
+import img_1962_we_choose_to_go_to_the_moon from "~/assets/images/timeline_final/1962/we_choose_to_go_to_the_moon.webp";
+import img_1963_tyereskova from "~/assets/images/timeline_final/1963/tyereskova.webp";
+import img_1963_Mars_1 from "~/assets/images/timeline_final/1963/Mars_1.webp";
+import img_1964_ranger_7_first_image from "~/assets/images/timeline_final/1964/ranger_7_first_image.webp";
+import img_1964_voszhod_1 from "~/assets/images/timeline_final/1964/voszhod_1.webp";
+import img_1965_first_spacewalk from "~/assets/images/timeline_final/1965/first_spacewalk.webp";
+import img_1965_gemini_6_gemini_7 from "~/assets/images/timeline_final/1965/gemini_6_gemini_7.webp";
+import img_1966_gemini_8_docking from "~/assets/images/timeline_final/1966/gemini_8_docking.webp";
+import img_1966_luna_9 from "~/assets/images/timeline_final/1966/luna_9.webp";
+import img_1967_Vladimir_Komarov from "~/assets/images/timeline_final/1967/Vladimir_Komarov.webp";
+import img_1967_apollo_1 from "~/assets/images/timeline_final/1967/apollo_1.webp";
+import img_1968_apollo_7 from "~/assets/images/timeline_final/1968/apollo_7.webp";
+import img_1968_apollo_8_foldfelkelte from "~/assets/images/timeline_final/1968/apollo_8_foldfelkelte.webp";
+import img_1969_apollo_11 from "~/assets/images/timeline_final/1969/apollo_11.webp";
+import img_1969_apollo_11_crew from "~/assets/images/timeline_final/1969/apollo_11_crew.webp";
+import img_1970_apollo_13 from "~/assets/images/timeline_final/1970/apollo_13.webp";
+import img_1970_lunohod_1 from "~/assets/images/timeline_final/1970/lunohod_1.webp";
+import img_1971_rover from "~/assets/images/timeline_final/1971/rover.webp";
+import img_1971_szaljut_1 from "~/assets/images/timeline_final/1971/szaljut_1.webp";
+import img_1972_apollo_17_orange_soil from "~/assets/images/timeline_final/1972/apollo_17_orange_soil.webp";
+import img_1972_apollo_17_sample from "~/assets/images/timeline_final/1972/apollo_17_sample.webp";
 
 export default {
     data() {
         return {
+            isTimelineNavigationPositionFixed: false,
+            isTimelineNavigationDragging: false,
+            timelineNavigationDraggingStart: null,
             timelineContent: {
                 1957: {
                     text: "Október 4-én megkezdődik az űrkorszak, a szovjet Szputnyik-1 műhold sikeres földkörüli pályára állításával. Később szintén a szovjetek földkörüli pályára állították az első élőlényt a Szputnyik-2-vel, Lajka kutyát.",
@@ -321,8 +355,39 @@ export default {
                 }
             }
         };
-    }
+    },
+    methods: {
+        timelineNavigationScroll() {
+            const { timelineYearContainer } = this.$refs;
 
+            if (timelineYearContainer !== null) {
+                this.isTimelineNavigationPositionFixed = timelineYearContainer.getBoundingClientRect().top < 0;
+            }   
+        },
+        scrollToYear(year) {
+            /* nem navigálunk ha drag közben engedi el az egeret, kivéve ha csak egy pillanatig tartott
+            (arra ha kattintáskor belemozdult az egér) */
+            const isMouseUpRightAfterDragStart = new Date().getTime() - this.timelineNavigationDraggingStart < 50;
+
+            if (!this.isTimelineNavigationDragging || isMouseUpRightAfterDragStart) {
+                location.href = `#TimelineYear${year}`;
+            }
+        },
+        dragStart() {
+            this.timelineNavigationDraggingStart = new Date().getTime();
+            this.isTimelineNavigationDragging = true;
+        },
+        dragStop() {
+            this.isTimelineNavigationDragging = false;
+        }
+    },
+    mounted() {
+        this.timelineNavigationScroll();
+        document.addEventListener("scroll", this.timelineNavigationScroll);
+    },
+    unMounted() {
+        document.removeEventListener("scroll", this.timelineNavigationScroll);
+    }
     //szaljut 7 film
 }
 </script>
@@ -333,16 +398,6 @@ export default {
 @import "~/node_modules/bootstrap/scss/mixins/breakpoints";
 
 @import "./variables";
-
-.timeline-container {
-    display: inline-block;
-    padding: 1rem;
-    background: black;
-
-    @include media-breakpoint-down(md) {
-        background: transparent;
-    }
-}
 
 .timeline-wrapper-size {
     width: map-get($container-max-widths, xxl);
@@ -364,57 +419,85 @@ export default {
     }
 }
 
-.timeline-wrapper {
-    position: relative;
+.timeline-container {
+    display: inline-block;
+    padding: 1rem 0;
+    background: black;
 
-    .timeline-strip {
-        height: $stripHeight;
-        width: 0;
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        transition: $stripTransition;
-        z-index: 1;
+    @include media-breakpoint-down(md) {
+        background: transparent;
+    }
 
-        &:nth-of-type(1) {
-            transition-delay: $containerTransition + $stripTransition * 2;
-            top: 0;
+    .timeline-navigation-container {
+        &::-webkit-scrollbar {
+            height: 4px;
         }
 
-        &:nth-of-type(2) {
-            top: $stripHeight;
-            transition-delay: $containerTransition + $stripTransition;
-
-            .timeline-strip-position-correction {
-                top: -100%;
-            }
-        }
-
-        &:nth-of-type(3) {
-            top: $stripHeight * 2;
-            transition-delay: $containerTransition;
-            
-            .timeline-strip-position-correction {
-                top: -200%;
-            }
-        }
-
-        .timeline-strip-position-correction {
-            position: absolute;
-            left: 0;
+        &::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 2px;
         }
     }
 
-    &:hover, &:focus {
+    .timeline-navigation-position-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    .timeline-wrapper {
+        position: relative;
+
         .timeline-strip {
-            width: 100%;
+            height: $stripHeight;
+            width: 0;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            transition: $stripTransition;
+            z-index: 1;
 
             &:nth-of-type(1) {
-                transition-delay: $containerTransition;
+                transition-delay: $containerTransition + $stripTransition * 2;
+                top: 0;
+            }
+
+            &:nth-of-type(2) {
+                top: $stripHeight;
+                transition-delay: $containerTransition + $stripTransition;
+
+                .timeline-strip-position-correction {
+                    top: -100%;
+                }
             }
 
             &:nth-of-type(3) {
-                transition-delay: $containerTransition + $stripTransition * 2;
+                top: $stripHeight * 2;
+                transition-delay: $containerTransition;
+                
+                .timeline-strip-position-correction {
+                    top: -200%;
+                }
+            }
+
+            .timeline-strip-position-correction {
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        &:hover, &:focus {
+            .timeline-strip {
+                width: 100%;
+
+                &:nth-of-type(1) {
+                    transition-delay: $containerTransition;
+                }
+
+                &:nth-of-type(3) {
+                    transition-delay: $containerTransition + $stripTransition * 2;
+                }
             }
         }
     }

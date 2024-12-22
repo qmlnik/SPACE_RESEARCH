@@ -1,7 +1,7 @@
 <template>
     <div class="w-100 h-100 overflow-hidden" style="background: black;" ref="container">
         <TypingText
-            v-if="!isAssetsLoaded"
+            v-if="!isFinishedLoading"
             text="betöltés..."
         />
 
@@ -10,21 +10,12 @@
             style="opacity: 0;"
             ref="headerContainer"
         >
-            <ClientOnly>
-                <img
-                    src="~/assets/images/stars_background_5.jpg" 
-                    class="position-absolute"
-                    :class="[...(isFillBGVertically ? ['w-100', 'h-auto'] : ['h-100', 'w-auto'])]"
-                    ref="BGImage"
-                    @load="BGLoaded"
-                />
-            </ClientOnly>
             <HeaderPlanets
                 ref="headerPlanets"
-                @all-planet-loaded="isAllPlanetLoaded = true"
+                @assets-loaded="isAssetsLoaded = true"
             />
             <div
-                v-if="isAssetsLoaded"
+                v-if="isFinishedLoading"
                 class="header-title-container"
             >
                 <TypingText
@@ -49,8 +40,7 @@ export default {
     data() {
         return {
             isDelayLoading: true,
-            isBGLoaded: false,
-            isAllPlanetLoaded: false,
+            isAssetsLoaded: false,
             BGWidth: 0,
             BGHeight: 0,
             containerWidth: 0,
@@ -60,14 +50,12 @@ export default {
         };
     },
     mounted() {
-        window.addEventListener("resize", this.setBGImageContainerRelations);
-
         setTimeout(() => {
             this.isDelayLoading = false;
         }, MIN_LOAD_TIME);
     },
     watch: {
-        isAssetsLoaded(newIsAssetsLoaded) {
+        isFinishedLoading(newIsAssetsLoaded) {
             if (newIsAssetsLoaded) {
                 this.$refs.headerPlanets.startRendering();
 
@@ -84,32 +72,13 @@ export default {
         }
     },
     computed: {
-        isAssetsLoaded() {
-            return !this.isDelayLoading && this.isBGLoaded && this.isAllPlanetLoaded;
+        isFinishedLoading() {
+            console.log("isFinishedLoading", this.isDelayLoading, this.isAssetsLoaded);
+            return !this.isDelayLoading && this.isAssetsLoaded;
         }
     },
     unMounted() {
         window.removeEventListener("resize", this.setContainerSize);
-    },
-    methods: {
-        setBGImageContainerRelations() {
-            const { offsetWidth: ContOffsetWidth, offsetHeight: ContOffsetHeight } = this.$refs.container;
-            const { offsetWidth: BGOffsetWidth, offsetHeight: BGOffsetHeight } = this.$refs.BGImage;
-
-            this.isFillBGVertically = (ContOffsetWidth / ContOffsetHeight) > (BGOffsetWidth / BGOffsetHeight);
-
-            const containerDiagonal = Math.sqrt(Math.pow(ContOffsetWidth / 2, 2) + Math.pow(ContOffsetHeight / 2, 2));
-            const BGShortestSide = Math.min(BGOffsetWidth, BGOffsetHeight);
-
-            this.BGScaleFitRotate = Math.max(containerDiagonal / (BGShortestSide / 2), 1);
-        },
-        BGLoaded() {
-            this.setBGImageContainerRelations();
-
-            this.$nextTick(() => {
-                this.isBGLoaded = true;
-            });
-        }
     }
 };
 </script>

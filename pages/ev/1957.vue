@@ -19,7 +19,7 @@
             }
         ]"
     />
-    <div class="px-3">
+    <div class="px-3 pb-3">
         <h2 class="mb-4">Fontosabb események</h2>
         <table class="table table-bordered mb-5 text-light">
             <thead>
@@ -142,9 +142,9 @@
                 A Kazaksztánban található bajkonuri űrrepülőtérről lőtték föl.
                 Elliptikus pályán keringett, a Földtől legtávolabbi szakaszánál több mint 900km magasan járt,
                 a bolygót 96 percet kerülte meg.
-                5 fő feladata volt a Szputnyiknak:
             </p>
-            <ul>
+            <p>5 fő feladata volt a Szputnyiknak:</p>
+            <ul style="float: left;">
                 <li>mesterséges tárgy Föld körüli pályára állítása</li>
                 <li>atmoszféra légköri sűrűségének meghatározása a műhold élettartama alapján
                     (mennyi idő alatt lassítja le annyira a légellenállás, hogy visszaereszkedjen a légkörbe)</li>
@@ -154,7 +154,7 @@
                     tartály, ha átüti egy kis meteroid, akkor kiszökik a gáz, ami érzékelhetó,
                     ilyen végül nem történt)</li>
             </ul>
-            <p>
+            <p style="float: left;">
                 Érdekesség, hogy a fényezett burkolat esténként látható volt a Földről szabad szemmel,
                 bár nagyon halványan.
                 A kilövést követően 92 napot töltött az űrben 1958 január 4-éig. 

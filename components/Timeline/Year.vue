@@ -2,9 +2,9 @@
     <NuxtLink
         class="year-container"
         :class="[isActive ? 'active-container' : null, yearContent?.isHighlighted ? 'highlighted-container' : null]"
-        :to="`/year/${year}`"
+        :to="`/ev/${year}`"
     >
-        <div class="py-5 py-md-2 px-3 d-flex">
+        <article class="py-5 py-md-2 px-3 d-flex">
             <div
                 class="d-flex align-items-center mx-2"
                 :class="[yearContent?.isHighlighted ? 'text-decoration-underline' : null]"
@@ -14,7 +14,7 @@
             </div>
             <div class="dot-line-container">
                 <template v-if="isShowDotLine">  
-                    <div class="dot">
+                    <div class="dot bg-primary">
                     </div>
                     <div class="line"></div>
                 </template>
@@ -31,8 +31,8 @@
                         >
                             <img :src="src" :alt="src.split('/').at(-1)" />
                             <div
-                                class="image-caption w-100 text-center"
-                                style="background: black; padding: 0.2rem; font-size: 0.8rem;"
+                                class="image-caption w-100 text-center bg-primary"
+                                style="padding: 0.2rem; font-size: 0.8rem;"
                             >
                                 {{ caption }}
                             </div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </NuxtLink>
 </template>
 
@@ -73,6 +73,7 @@ export default {
 @import "~/node_modules/bootstrap/scss/mixins/breakpoints";
 
 @import "./variables";
+@import "~/assets/bootstrap/variables";
 
 .timeline-wrapper {
     &:hover, &:focus {
@@ -104,7 +105,7 @@ export default {
     font-size: 1.1rem;
     color: $inactiveColor;
     transition: $containerTransition;
-    background: black;
+    background: $primary;
 
     @include media-breakpoint-down(md) {
         background: transparent;
@@ -147,7 +148,6 @@ export default {
             border-radius: 50%;
             border: 2px solid $inactiveColor;
             position: absolute;
-            background: black;
             z-index: 3;
         }
 

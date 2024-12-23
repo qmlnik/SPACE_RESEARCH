@@ -4,10 +4,12 @@ $Lago-Dobbiaco-Italia-Europa-3-hex: #F2CEA2;
 $Lago-Dobbiaco-Italia-Europa-4-hex: #D9AB82;
 $Lago-Dobbiaco-Italia-Europa-5-hex: #8C644D;*/
 
-$primary: #F3ECE6; //#364559
-$secondary: #F2CEA2;
-$dark: #131721;
+$primary: #02060f;
+$secondary: #001953;
+$dark: $primary;
 $light: #F3ECE6;
 
 $body-color: $light;
-$body-bg: black;
+$body-bg: $primary;
+
+$table-color: $light;

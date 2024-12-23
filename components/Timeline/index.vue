@@ -9,8 +9,8 @@
             >
                 <div
                     :class="[isTimelineNavigationPositionFixed ? 'position-fixed' : null]"
-                    class="position-absolute d-flex justify-content-center"
-                    style="background: black; height: 65px; width: inherit; top: 0; z-index: 4;" 
+                    class="position-absolute d-flex justify-content-center top-0 bg-primary"
+                    style="height: 65px; width: inherit; z-index: 4;" 
                 >
                     <div
                         v-dragscroll
@@ -35,7 +35,7 @@
                     v-for="[currentYear, yearContent] in Object.entries(timelineContent)"
                     class="timeline-wrapper"
                 >
-                    <div :id="`TimelineYear${currentYear}`" style="position: relative; top: -100px;"></div>
+                    <div :id="`idovonal-ev-${currentYear}`" style="position: relative; top: -100px;"></div>
                     <div class="d-none d-md-block">
                         <TimelineYear
                             :year="currentYear"
@@ -370,7 +370,7 @@ export default {
             const isMouseUpRightAfterDragStart = new Date().getTime() - this.timelineNavigationDraggingStart < 50;
 
             if (!this.isTimelineNavigationDragging || isMouseUpRightAfterDragStart) {
-                location.href = `#TimelineYear${year}`;
+                location.href = `#idovonal-ev-${year}`;
             }
         },
         dragStart() {
@@ -398,6 +398,7 @@ export default {
 @import "~/node_modules/bootstrap/scss/mixins/breakpoints";
 
 @import "./variables";
+@import "~/assets/bootstrap/variables";
 
 .timeline-wrapper-size {
     width: map-get($container-max-widths, xxl);
@@ -422,7 +423,7 @@ export default {
 .timeline-container {
     display: inline-block;
     padding: 1rem 0;
-    background: black;
+    background: $primary;
 
     @include media-breakpoint-down(md) {
         background: transparent;

@@ -18,10 +18,12 @@
                 v-if="isFinishedLoading"
                 class="header-title-container"
             >
-                <TypingText
-                    text="űrkutatás katalógus"
-                    :is-header="true"
-                />
+                <h1 class="fw-normal">
+                    <TypingText
+                        text="űrkutatás katalógus"
+                        :is-header="true"
+                    />
+                </h1>
             </div>
             <div class="scroll-indicator-container">
                 <div class="scroll-indicator-arrow" style="margin-bottom: -3px;"></div>
@@ -73,7 +75,6 @@ export default {
     },
     computed: {
         isFinishedLoading() {
-            console.log("isFinishedLoading", this.isDelayLoading, this.isAssetsLoaded);
             return !this.isDelayLoading && this.isAssetsLoaded;
         }
     },

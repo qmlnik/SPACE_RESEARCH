@@ -10,7 +10,7 @@ export const CONFIG = Object.freeze({
     },
     HEADER: {
         MIN_LOAD_TIME: 2000,
-        FADE_IN_TIME: 2000,
+        FADE_IN_TIME: 1500,
         FADE_IN_DELAY: 700
     },
     TIMELINE_START_YEAR: 1957,

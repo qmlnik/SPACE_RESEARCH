@@ -62,7 +62,7 @@
                 nagyon fontos lépcső volt az űrkutatás felvirágzásában.
                 Egy folyékony hajtóanyagú rakéta (etanol és víz keveréke), 14 méter magas és 12-13 tonnát nyomott.
                 Ez volt az első rakéta, ami átlépte a Kármán-vonalat (100km) és így kilépett a világűrbe (ez csak
-                űrugrás volt, nem állt Föld körüli pályára, miután kifogyott az üzemanyaga egyszerűen visszazuhant!).
+                űrugrás volt, nem állt Föld körüli pályára, miután kifogyott az üzemanyagból egyszerűen visszazuhant!).
                 A történelmi repülés 1944 június 20-án történt a maga 175km-es csúcsmagasságával.
                 Sajnos a második világháború során egy nagy hatótávolságú fegyverként használták, ballisztikus pályán
                 több száz kilóméterről lőtték először Párizst, majd Nagy-Britanniát és Belgiumot.
@@ -79,10 +79,9 @@
                 <figcaption class="figure-caption text-center">R-7-es rakéta</figcaption>
             </figure>
             <p>
-                A V-2 egy hatalmas technikai vívmánynak számított, éppen ezért a saját rakétáik alapjaiként is használták,
-                valamint a háború után éppen ezért mindkét nagyhatalom, az USA
-                és a Szovjetúnió is megpróbált minél több embert megszerezni magának az akkori legjobb német rakétatudománnyal
-                foglalkozó tudósokat.
+                A V-2 egy hatalmas technikai vívmánynak számított, éppen ezért a nagyhatalmak a saját rakétáik
+                alapjaiként is használták, valamint a háború után megpróbáltak minél több embert megszerezni
+                maguknak az akkori legjobb német rakétatudománnyal foglalkozó tudósok közül.
                 Közülük a leghíresebb Wernher von Braun, a V-2 kifejlesztéséért felelős csapat vezetője
                 Amerikába került, ahol tovább folytatta a munkáját.
                 Kezdetben még nem az űrverseny motiválta a nagyhatalmakat a minél nagyobb hatótávú és erősebb
@@ -96,7 +95,7 @@
                 A világ első ICBM-je egy R-7-es Semyorka rakéta volt, amit 1957 augusztus 21-én indítottak utjára.
                 A rakéta megípétésével Szergej Pavlovics Koroljov-ot bízták meg, aki haláláig a szovjet rakéta
                 fejlesztések/űrkutatás meghatározó alakja volt.
-                Az első sikeres amerikai ICBM kilövés még de azon év decemberben megtörtént egy Atlas rakétával. 
+                Az első sikeres amerikai ICBM kilövés még azon év decemberben megtörtént egy Atlas rakétával. 
             </p>
         </div>
         
@@ -150,14 +149,14 @@
                     (mennyi idő alatt lassítja le annyira a légellenállás, hogy visszaereszkedjen a légkörbe)</li>
                 <li>vizuális és rádiós helyzetmeghatározás</li>
                 <li>atmoszféra hatása a rádióhullámokra</li>
-                <li>észlelni, hogy csapódott-e meteroid (erre volt egy nyomás alatt tartott nitrogén
+                <li>észlelni, hogy csapódott-e be meteroid (erre volt egy nyomás alatt tartott nitrogén
                     tartály, ha átüti egy kis meteroid, akkor kiszökik a gáz, ami érzékelhetó,
                     ilyen végül nem történt)</li>
             </ul>
             <p style="float: left;">
                 Érdekesség, hogy a fényezett burkolat esténként látható volt a Földről szabad szemmel,
                 bár nagyon halványan.
-                A kilövést követően 92 napot töltött az űrben 1958 január 4-éig. 
+                A kilövést követően 92 napot töltött az űrben, 1958 január 4-éig. 
             </p>
         </div>
         <h2> </h2>

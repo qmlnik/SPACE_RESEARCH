@@ -20,7 +20,7 @@
                 </template>
             </div>
             <div class="row g-4" style="width: calc(100% - 100px);">
-                <div class="col-md-7">
+                <div class="col-md-7 d-flex align-items-center">
                     {{ yearContent?.text }}
                 </div>
                 <div class="col-md-5 d-flex align-items-center">

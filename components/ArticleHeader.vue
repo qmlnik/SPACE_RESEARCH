@@ -66,7 +66,7 @@ export default {
 
     .header-image {
         width: 40%;
-        transform: rotate(-8deg);
+        transform: rotate(-10deg);
         transform-origin: right bottom;
         position: absolute;
         bottom: 0;

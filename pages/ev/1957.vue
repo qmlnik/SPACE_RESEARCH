@@ -24,8 +24,8 @@
         <table class="table table-bordered mb-5 text-light">
             <thead>
                 <tr>
-                    <th width="50">Esemény</th>
-                    <th width="50">Dátum</th>
+                    <th style="width: 50%;">Esemény</th>
+                    <th style="width: 50%;">Dátum</th>
                 </tr>
             </thead>
             <tbody>
@@ -121,7 +121,7 @@
             </p>
         </div>
 
-        <div class="mb-3" style="float: left">
+        <div style="float: left">
             <figure class="article-image-container article-image-left figure">
                 <img
                     src="~/assets/images/article/1957/szputnyik_1_kiloves.webp"
@@ -142,8 +142,11 @@
                 Elliptikus pályán keringett, a Földtől legtávolabbi szakaszánál több mint 900km magasan járt,
                 a bolygót 96 percet kerülte meg.
             </p>
+        </div>
+
+        <div style="float: left;">
             <p>5 fő feladata volt a Szputnyiknak:</p>
-            <ul style="float: left;">
+            <ul>
                 <li>mesterséges tárgy Föld körüli pályára állítása</li>
                 <li>atmoszféra légköri sűrűségének meghatározása a műhold élettartama alapján
                     (mennyi idő alatt lassítja le annyira a légellenállás, hogy visszaereszkedjen a légkörbe)</li>
@@ -153,16 +156,12 @@
                     tartály, ha átüti egy kis meteroid, akkor kiszökik a gáz, ami érzékelhetó,
                     ilyen végül nem történt)</li>
             </ul>
-            <p style="float: left;">
+            <p>
                 Érdekesség, hogy a fényezett burkolat esténként látható volt a Földről szabad szemmel,
                 bár nagyon halványan.
                 A kilövést követően 92 napot töltött az űrben, 1958 január 4-éig. 
             </p>
         </div>
-        <h2> </h2>
-        <p>
-            
-        </p>
 
         <h2 class="mb-4">Szputnyik-2 és Lajka kutya</h2>
         <div class="mb-3" style="float: left">
@@ -204,7 +203,7 @@
             </p>
         </div>
 
-        <h2 class="mb-4">Amerika reakciója</h2>
+        <h2 class="mb-4" id="amerika-reakcioja">Amerika reakciója</h2>
         <div class="mb-3" style="float: left">
             <figure class="article-image-container article-image-right figure">
                 <img
@@ -353,33 +352,4 @@ import sputnik_desktop from "~/assets/images/article/1957/header/desktop/sputnik
 </script>
 
 <style lang="scss">
-@import "~/node_modules/bootstrap/scss/functions";
-@import "~/node_modules/bootstrap/scss/variables";
-@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
-
-.article-image-container {
-    margin: 0 0 1rem 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    &.article-image-left {
-        float: left;
-        margin: 0 1rem 1rem 0;
-    }
-
-    &.article-image-right {
-        float: right;
-        margin: 0 0 1rem 1rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-        margin: 0 0 1rem 0;
-        width: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-}
 </style>

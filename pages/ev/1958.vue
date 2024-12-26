@@ -59,7 +59,7 @@
             </figure>
             <p>
                 Az amerikai társadalomban óriási volt az elégedetlenség, hogy a Szputnyik-1 és 2 sikerei
-                után Amerika nem tud visszavágni, ezért a Vanguard-al párhuzamosan elindították az Explorer
+                után Amerika nem tud visszavágni, ezért a Vanguard programmal párhuzamosan elindították az Explorer
                 programot, ami gyorsan sikerrel is járt:
                 <span class="fw-bold">
                     1958 január 31-én Amerika Föld körüli pályára állítja az első műholdját, az Explorer-1-et.
@@ -67,14 +67,15 @@
                 A műholdat a Wernher von Braun által három hónap alatt megépített Jupiter-C (Juno-1)
                 rakéta juttatta az űrbe.
                 Ez egy átalakított Redstone ballisztikus rakéta volt (később egy Redstone variáns juttatta az
-                első Amerikait az űrbe), amire rászereltek három plusz, szilárd
+                első amerikait az űrbe), amire rászereltek három plusz, szilárd
                 hajtóanyagú rakétát (a negyedik fokozat maga volt a műhold).
-                A fő tudományos eszköz a műholdon James Van Allen által tervezett és épített Geiger-Müller-számláló,
+                A fő tudományos eszköz a műholdon a James Van Allen által tervezett és épített Geiger-Müller-számláló,
                 amivel azt az elméletét tesztelte, hogy a Föld mágneses mezeje csapdába ejti az űrből jövő
-                nagy energiájú részecskéket, vagyis minél inkább távolodunk a Földtől egyre nagyobb lesz a sugárzás
-                (egy bizonyos magasságig). A mérések igazolták a feltevést, azóta két ilyen tórusz alakú övet fedeztek
+                nagy energiájú részecskéket, vagyis egy bizonyos magasságon felül jelentősen megugrik a
+                bolygó körül a sugárzás.
+                A mérések igazolták a feltevését, azóta két ilyen tórusz alakú övet fedeztek
                 fel a Föld körül, ezeket Van Allen öveknek hívjuk.
-                A két hónappal később az Explorer-3 folytatta az adatok gyűjtését, amik megerősítették az
+                A két hónappal később az Explorer-3 műhold folytatta az adatok gyűjtését, amik megerősítették az
                 Explorer-1 felfedezését.
             </p>
         </div>
@@ -88,9 +89,9 @@
                 <figcaption class="figure-caption text-center">Explorer-1</figcaption>
             </figure>
             <p>
-                A műhold henger formájú, 2m hosszú és 15cm átmérőjű volt, 14kg-ot nyomott
+                A műhold henger formájú, 2.03 m hosszú és 15.2 cm átmérőjű volt, 14 kg-ot nyomott
                 és 4 antennát helyeztek el rajta a közepén.
-                Földtől legtávolabbi pontján több mint 2500km magasan járt és 115 perc alatt került meg a Földet.
+                Földtől legtávolabbi pontján több mint 2500 km magasan járt és 115 perc alatt került meg a Földet.
                 Az adatok összeállítása lassú volt a periodikus jelkimaradások miatt.
                 Május 23-ig küldte az adatokat és 1970-ben semmisült meg az atmoszférába visszatérve.
             </p>
@@ -118,10 +119,10 @@
                 Föld körüli pályán.
             </p>
             <p>
-                A Vanguard-1 tömege mindössze 1.46kg, gömb alakú alumínium burkolata 16.5cm átmérőjű,
-                ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58cm-es átmérőjéhez képest.
-                Kommunikációra 6 db 30cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
-                Pályája Földtől legtábolabbi pontján majdnem 4000km magasan volt és 134 perc alatt tett meg egy kört.
+                A Vanguard-1 tömege mindössze 1.46 kg, gömb alakú alumínium burkolata 16.5 cm átmérőjű,
+                ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83 kg-os súlyához és az 58 cm-es átmérőjéhez képest.
+                Kommunikációra 6 db 30 cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
+                Pályája Földtől legtávolabbi pontján majdnem 4000 km magasan volt és 134 perc alatt tett meg egy kört.
                 Úgy számolták az indításakor, hogy 2000 évig fog keringeni az űrben, de az atmoszféra fékező
                 hatása és a napszél miatt manapság ezt 240 évre becsülik.
                 Annyi biztos, hogy jelenleg a Vanguard-1 a legrégebbi műhold az űrben.
@@ -146,14 +147,14 @@
                 tanulmányozza az atmoszféra felsőbb rétegeiben lévő állapotokat.
                 A műhold főtervezője Szergej P. Koroljov volt, az űreszközt "Object D"-nek nevezte el ("D objektum").
                 A mérnöknek régi vágya volt egy tudományos műhold űrbe jutattása, ám Hruscsov főtitkár majdnem kisiklatta
-                a terveket az Amerikaiakkal való versengés miatt.
+                a terveket az amerikaiakkal való versengés miatt.
                 Neki az volt a fontos, hogy minél hamarabb beelőzze a vetélytársat, így született meg kompromisszumként
                 a Szputnyik-1 és 2, amik egyszerűbben és gyorsabban elkészíthető műholdak voltak, majd miután meglett
                 az elsőbbség, engedélyt adott Koroljov-nak, hogy teljesítse be az álmát és fejezze be a Szputnyik-3-at.
-                A biztonság kedvéért egyből kettőt épített belőle a biztonság kedvéét.
+                Egyből kettőt is épített belőle a biztonság kedvéét.
                 Helyesen is tette, mivel április 27-én, az első próbálkozás során az indulás után 90 másodperccel
                 a hordozórakéta felrobbant. Irónikus, hogy a balesetet majdnem sértetlenül átvészelte a műhold,
-                viszont már a földön egy rövidzárlatt miatt kigyulladt és használatatlanná vált.
+                viszont már a földön egy rövidzárlatt miatt kigyulladt és használhatatlanná vált.
                 A május 15-ei kilövés így a tartalékkal történt, ami pedig sikerrel lezajlott.
             </p>
         </div>
@@ -175,10 +176,10 @@
                 (első sorban Naprendszeren kívülről érkező nagy energiájú részecskék, nem kozmikus háttérsugárzás!),
                 a Föld mágneses terét.
                 Ő is észlelte az Explorer-1 műhold által már igazolt Van Allen sugárzási öveket.
-                Fellövésekor messze a világ legnehezebb műholdjának számított az 1327kg-os súlyával, nehezebb volt, mint
+                Fellövésekor messze a világ legnehezebb műholdjának számított az 1327 kg-os súlyával, nehezebb volt, mint
                 az addig korábban fellőtt 5 műhold együtt.
-                A kúp alakú szerkezet magassága 3.57m, átmérője pedig 1.73m.
-                Pályája legtávolabbi pontján 1864km-re volt a Földtől és 106 perc alatt kerülte meg.
+                A kúp alakú szerkezet magassága 3.57 m, átmérője pedig 1.73 m.
+                Pályája legtávolabbi pontján 1864 km-re volt a Földtől és 106 perc alatt kerülte meg.
                 A mért adatokat mágnesszalagra akarták menteni, hogy rögzítse a nem szovjet fennhatóság alatt álló területek
                 felett begyűjtött adatokat, ám a berendezés meghibásodott, így csak az adott pillanatban végzett méréseket
                 tudták lekérni, az adatok egy része elvszett.
@@ -203,7 +204,7 @@
                 1915-ben alapították a repüléstechnika fejlesztéséért, hogy behozzák a lemaradást az akkoriban fejlettebb
                 Európával szemben, az 50-es években viszont már neki kezdtek az űr témájú kutatásoknak.
                 Kutatási munkájuk közül az egyik leghíresebb az X-1 kísérleti rakétameghajtású repülő,
-                ami 1947-ben első repülőgépként átlépte a hangsebességet 1126km/h-val, ami 1.06 Mach-nak felelt meg
+                ami 1947-ben első repülőgépként átlépte a hangsebességet 1126 km/h-val, ami 1.06 Mach-nak felelt meg
                 (1 Mach = hangsebesség adott közegben).
                 Az szovjet sikerek által kiváltott sokkot enyhítették az Explorer-1 eredményei, de nem egészen.
                 Megszületett az igény egy új, állandó civil ügynökség létrehozására.
@@ -265,16 +266,16 @@
 
             https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B - vanguard 1
             első műhold, ami napelemeket használt
-            pályája Földtől legtábolabbi pontján majdnem 4000km-re van a bolygótól és 134 perc alatt tesz meg egy kört
+            pályája Földtől legtábolabbi pontján majdnem 4000 km-re van a bolygótól és 134 perc alatt tesz meg egy kört
             2000 év keringést terveztek neki, de az atmoszféra fékező hatása és a napszél miatt manapság csak 240 évet
             jósolnak neki (a kilövéstől számítva)
             eredetileg a világon az első, majd Amerika első műholdjának szánták, ám egyik sem sikerült neki, a negyedik
             műhold lett a világon
             két rádióadó üzemelt benne, az egyik akkumulátorról ment, ez 3 hónap alatt lemerült, a másikat a napelemek
             üzemeltették, ezek 1964-ig működtek, ezután már csak vizuálisan lehetett nyomon követni.
-            Tömege mindössze 1.46kg, sömb alakú alumínium burkolata 16.5cm átmérőjő,
-            ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58cm-es átmérőjéhez képest.
-            6 db 30cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
+            Tömege mindössze 1.46 kg, sömb alakú alumínium burkolata 16.5 cm átmérőjő,
+            ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58 cm-es átmérőjéhez képest.
+            6 db 30 cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
 
             https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B - szputnyik 3
             1958 május 15 a szovjetek fellövik a Szputnyik 3-at a bajkonuri űrrepülőtérről.
@@ -283,10 +284,10 @@
             (más néven ionok, nekik köszönhető a sarki fény), a kozmikus sugárzást (első sorban Naprendszeren kívülről érkező
             nagy energiájú részecskék, nem kozmikus háttérsugárzás!), a Föld mágneses terét.
             Ő is vizsgálta az Explorer-1 műhold által már igazolt Van Allen öveket.
-            Fellövésekor messze a világ legnehezebb műholdjának számított az 1327kg-os súlyával, nehezebb volt, mint
+            Fellövésekor messze a világ legnehezebb műholdjának számított az 1327 kg-os súlyával, nehezebb volt, mint
             az addig korábban fellőtt 5 műhold együtt.
             A kúp alakú szerkezet magassága 3.57m, átmérője pedig 1.73m.
-            Pályája legtávolabbi pontján 1864km-re volt a Földtől és 106 perc alatt került meg.
+            Pályája legtávolabbi pontján 1864 km-re volt a Földtől és 106 perc alatt került meg.
             A mért adatokat mágnesszalagra akarták menteni, hogy rögzítse a nem szovjet fennhatóság alatt álló területek
             felett begyűjtött adatokat, ám a berendezés meghibásodott, így csak az adott pillanatban végzett méréseket tudták
             lekérni, az adatok egy része elvszett.

@@ -1,5 +1,5 @@
 <template>
-    <p class="fst-italic">
+    <p class="fst-italic" style="word-break: break-word;">
         Források:<br />
         <ul>
             <li v-for="source in sources">

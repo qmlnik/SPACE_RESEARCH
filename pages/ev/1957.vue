@@ -54,7 +54,12 @@
         <h2 class="mb-4"> A V-2-től az űrkorszak kezdetéig</h2>
         <div class="mb-3" style="float: left">
             <figure class="article-image-container article-image-right figure">
-                <img src="~/assets/images/article/1957/v2.webp" alt="V-2-es rakéta" />
+                <img
+                    src="~/assets/images/article/1957/v2.webp"
+                    alt="V-2-es rakéta"
+                    width="300"
+                    height="240"
+                />
                 <figcaption class="figure-caption text-center">V-2-es rakéta</figcaption>
             </figure>
             <p>
@@ -75,6 +80,8 @@
                     src="~/assets/images/article/1957/r_7_2.webp"
                     alt="R-7-es rakéta"
                     style="max-width: 200px;"
+                    width="400"
+                    height="593"
                 />
                 <figcaption class="figure-caption text-center">R-7-es rakéta</figcaption>
             </figure>
@@ -105,6 +112,8 @@
                 <img
                     src="~/assets/images/article/1957/sputnik_szerelese.webp"
                     alt="Szputnyik-1 utolsó simítások"
+                    width="300"
+                    height="169"
                 />
                 <figcaption class="figure-caption text-center">Szputnyik-1 utolsó simítások</figcaption>
             </figure>
@@ -126,6 +135,8 @@
                 <img
                     src="~/assets/images/article/1957/szputnyik_1_kiloves.webp"
                     alt="Szputnyik-1 kilövés"
+                    width="300"
+                    height="227"
                 />
                 <figcaption class="figure-caption text-center">Szputnyik-1 kilövés</figcaption>
             </figure>
@@ -169,6 +180,8 @@
                 <img
                     src="~/assets/images/article/1957/Lajka_1.webp"
                     alt="Lajka kutya"
+                    width="300"
+                    height="314"
                     style="max-width: 250px;"
                 />
                 <figcaption class="figure-caption text-center">Lajka kutya</figcaption>
@@ -188,6 +201,8 @@
                 <img
                     src="~/assets/images/article/1957/Laika_2_article.webp"
                     alt="Lajka kutya"
+                    width="300"
+                    height="225"
                     style="max-width: 250px;"
                 />
                 <figcaption class="figure-caption text-center">Lajka kutya</figcaption>
@@ -209,6 +224,8 @@
                 <img
                     src="~/assets/images/article/1957/vanguard_explosion.webp"
                     alt="Vanguard rakéta robbanása"
+                    width="300"
+                    height="225"
                 />
                 <figcaption class="figure-caption text-center">Vanguard rakéta robbanása</figcaption>
             </figure>

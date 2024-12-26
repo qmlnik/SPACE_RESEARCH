@@ -61,7 +61,7 @@ export default {
     height: 300px;
 
     @include media-breakpoint-down(lg) {
-        height: 250px;
+        height: 200px;
     }
 
     .header-image {

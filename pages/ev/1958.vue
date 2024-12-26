@@ -41,6 +41,10 @@
                     <td>Szputnyik-3 kilövés</td>
                     <td>1958 május 15.</td>
                 </tr>
+                <tr>
+                    <td>NASA megalapítása</td>
+                    <td>1958 július 29.</td>
+                </tr>
             </tbody>
         </table>
 
@@ -48,19 +52,53 @@
         <div class="mb-3" style="float: left">
             <figure class="article-image-container article-image-left figure">
                 <img
-                    src="~/assets/images/article/1958/sputnik_3_article.webp"
-                    alt="Szputnyik-3"
+                    src="~/assets/images/article/1958/explorer_1_2.webp"
+                    alt="Explorer-1 sikeres kilövés utáni ünneplés"
                 />
-                <figcaption class="figure-caption text-center">Szputnyik-3</figcaption>
+                <figcaption class="figure-caption text-center">Explorer-1 sikeres kilövés utáni ünneplés</figcaption>
             </figure>
             <p>
-                
+                Az amerikai társadalomban óriási volt az elégedetlenség, hogy a Szputnyik-1 és 2 sikerei
+                után Amerika nem tud visszavágni, ezért a Vanguard-al párhuzamosan elindították az Explorer
+                programot, ami gyorsan sikerrel is járt:
+                <span class="fw-bold">
+                    1958 január 31-én Amerika Föld körüli pályára állítja az első műholdját, az Explorer-1-et.
+                </span>
+                A műholdat a Wernher von Braun által három hónap alatt megépített Jupiter-C (Juno-1)
+                rakéta juttatta az űrbe.
+                Ez egy átalakított Redstone ballisztikus rakéta volt (később egy Redstone variáns juttatta az
+                első Amerikait az űrbe), amire rászereltek három plusz, szilárd
+                hajtóanyagú rakétát (a negyedik fokozat maga volt a műhold).
+                A fő tudományos eszköz a műholdon James Van Allen által tervezett és épített Geiger-Müller-számláló,
+                amivel azt az elméletét tesztelte, hogy a Föld mágneses mezeje csapdába ejti az űrből jövő
+                nagy energiájú részecskéket, vagyis minél inkább távolodunk a Földtől egyre nagyobb lesz a sugárzás
+                (egy bizonyos magasságig). A mérések igazolták a feltevést, azóta két ilyen tórusz alakú övet fedeztek
+                fel a Föld körül, ezeket Van Allen öveknek hívjuk.
+                A két hónappal később az Explorer-3 folytatta az adatok gyűjtését, amik megerősítették az
+                Explorer-1 felfedezését.
+            </p>
+        </div>
+
+        <div class="mb-3" style="float: left">
+            <figure class="article-image-container article-image-right figure">
+                <img
+                    src="~/assets/images/article/1958/explorer_1_article.webp"
+                    alt="Explorer-1"
+                />
+                <figcaption class="figure-caption text-center">Explorer-1</figcaption>
+            </figure>
+            <p>
+                A műhold henger formájú, 2m hosszú és 15cm átmérőjű volt, 14kg-ot nyomott
+                és 4 antennát helyeztek el rajta a közepén.
+                Földtől legtávolabbi pontján több mint 2500km magasan járt és 115 perc alatt került meg a Földet.
+                Az adatok összeállítása lassú volt a periodikus jelkimaradások miatt.
+                Május 23-ig küldte az adatokat és 1970-ben semmisült meg az atmoszférába visszatérve.
             </p>
         </div>
 
         <h2 class="mb-4">Várva várt Vanguard siker</h2>
         <div class="mb-3" style="float: left">
-            <figure class="article-image-container article-image-right figure">
+            <figure class="article-image-container article-image-left figure">
                 <img
                     src="~/assets/images/article/1958/vanguard_1.webp"
                     alt="Vanguard-1"
@@ -71,7 +109,7 @@
                 1958 március 17-én sikeresen Föld körüli pályára áll a Vanguard-1, a világ negyedik műholdja.
                 Az eredményt 5 sikertelen indítás előzte meg, leglátványosabb az
                 <NuxtLink to="/ev/1957#amerika-reakcioja" class="text-decoration-underline">
-                    1957 december 7-én felrobbant rakéta
+                    1957 december 7-én indítás után felrobbant rakéta
                 </NuxtLink>.
                 A cél eredetileg az volt, hogy a Nemzetközi geofizikai év alkalmából a világon első műholdként
                 jusson ki az űrbe, de még az első amerikai műhold sem lett belőle, mivel az Explorer-1 beelőzte.
@@ -80,10 +118,10 @@
                 Föld körüli pályán.
             </p>
             <p>
-                A Vanguard-1 tömege mindössze 1.46kg, sömb alakú alumínium burkolata 16.5cm átmérőjő,
+                A Vanguard-1 tömege mindössze 1.46kg, gömb alakú alumínium burkolata 16.5cm átmérőjű,
                 ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58cm-es átmérőjéhez képest.
                 Kommunikációra 6 db 30cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
-                Pályája Földtől legtábolabbi pontján majdnem 4000km magasan van és 134 perc alatt tesz meg egy kört.
+                Pályája Földtől legtábolabbi pontján majdnem 4000km magasan volt és 134 perc alatt tett meg egy kört.
                 Úgy számolták az indításakor, hogy 2000 évig fog keringeni az űrben, de az atmoszféra fékező
                 hatása és a napszél miatt manapság ezt 240 évre becsülik.
                 Annyi biztos, hogy jelenleg a Vanguard-1 a legrégebbi műhold az űrben.
@@ -94,7 +132,7 @@
 
         <h2 class="mb-4">Laboratórium az űrben: a Szputnyik-3</h2>
         <div class="mb-3" style="float: left">
-            <figure class="article-image-container article-image-left figure">
+            <figure class="article-image-container article-image-right figure">
                 <img
                     src="~/assets/images/article/1958/sputnik_3_article.webp"
                     alt="Szputnyik-3"
@@ -121,7 +159,7 @@
         </div>
 
         <div class="mb-3" style="float: left">
-            <figure class="article-image-container article-image-right figure">
+            <figure class="article-image-container article-image-left figure">
                 <img
                     src="~/assets/images/article/1958/szputnyik_3_2.webp"
                     alt="Szputnyik-3 előkészítése"
@@ -136,8 +174,7 @@
                 (más néven ionok, nekik köszönhetőek például a sarki fény), a kozmikus sugárzást
                 (első sorban Naprendszeren kívülről érkező nagy energiájú részecskék, nem kozmikus háttérsugárzás!),
                 a Föld mágneses terét.
-                Ő is észlelte az Explorer-1 műhold által már igazolt Van Allen sugárzási öveket
-                (ezek tórusz alakban ölelik körül a Földet, kiugróan magas a sugárzás bennük).
+                Ő is észlelte az Explorer-1 műhold által már igazolt Van Allen sugárzási öveket.
                 Fellövésekor messze a világ legnehezebb műholdjának számított az 1327kg-os súlyával, nehezebb volt, mint
                 az addig korábban fellőtt 5 műhold együtt.
                 A kúp alakú szerkezet magassága 3.57m, átmérője pedig 1.73m.
@@ -149,70 +186,140 @@
             </p>
         </div>
 
-        <h2 class="mb-4">Megszületik a Nasa</h2>
+        <h2 class="mb-4">Megszületik a NASA</h2>
+        <div class="mb-3" style="float: left">
+            <figure class="article-image-container article-image-right figure">
+                <img
+                    src="~/assets/images/article/1958/nasa_article.webp"
+                    alt="NASA logó"
+                />
+                <figcaption class="figure-caption text-center">NASA logó</figcaption>
+            </figure>
+            <p>
+                A NASA létrejöttére nagy hatást gyakorolt az 1957 október 4-én űrbe juttatott Szputnyik-1
+                műhold, ám korábban is létezett más formában. Elődjét NACA-nek hívták
+                (National Advisory Committee for Aeronautics,
+                "Nemzeti Repülésügyi Tanácsadó Testület", csak betűzve mondjuk a nevét, összeolvasva nem, mint a "názánál"),
+                1915-ben alapították a repüléstechnika fejlesztéséért, hogy behozzák a lemaradást az akkoriban fejlettebb
+                Európával szemben, az 50-es években viszont már neki kezdtek az űr témájú kutatásoknak.
+                Kutatási munkájuk közül az egyik leghíresebb az X-1 kísérleti rakétameghajtású repülő,
+                ami 1947-ben első repülőgépként átlépte a hangsebességet 1126km/h-val, ami 1.06 Mach-nak felelt meg
+                (1 Mach = hangsebesség adott közegben).
+                Az szovjet sikerek által kiváltott sokkot enyhítették az Explorer-1 eredményei, de nem egészen.
+                Megszületett az igény egy új, állandó civil ügynökség létrehozására.
+                Az akkori elnöktől, Eisenhower-től  és adminisztrációjától ennél többet vártak, ezért
+                kiválasztották a NACA-t és kibővítették a működését, hogy kézbe vegye a repülés és az
+                űrrepülés területeket és így
+                <span class="fw-bold">
+                    létrejött a National Aeronautics and Space Administration
+                    ("Nemzeti Repülési és Űrhajózási Hivatal"), a NASA 1958 július 29-én
+                </span>,
+                majd október 1-én megkezdte működését.
+            </p>
+        </div>
 
-        <div style="float: left;">
-    https://www.nasa.gov/history/nasa-goddards-beginnings-in-project-vanguard/
-    1955-ben indult a program, IGY-ben műholdat följuttatni
-    első 5 kilövés sikertelen, az emberek elégedetlenek, különösen a Szputnyik-1 sikere után.
-    March 17, 1958 siker, Vanguard-1 az űrbe kerül (az Explorer-1 után)
-    Jelenleg a Vanguard-1 a legidősebb műhöld az űrben, a kilövése után 240 évig kering
-    napelem?
-    a kezdeti kudarcok ellenére sok tapasztalatot szereztek a projekten dolgozók, amit a későbbi projekteken
-    sikerrel kamatoztattak
+        <ArticleSources
+            :sources="[
+                    'https://www.youtube.com/watch?v=Tx8x1Oj7Q4g',
+                    'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B',
+                    'https://www.nasa.gov/history/sputnik/sputorig.html',
+                    'https://www.nasa.gov/history/explorer-1-overview/',
+                    'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B',
+                    'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/displayTrajectory.action?id=1958-004B',
+                    'https://www.nasa.gov/history/60-years-ago-soviets-launch-sputnik-3/',
+                    'https://atomfizika.elte.hu/akos/orak/mfszem/2020/mm.pdf',
+                    'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-001A',
+                    'https://www.nasa.gov/history/sputnik/expinfo.html',
+                    'https://www.nasa.gov/specials/60counting/begin.html',
+                    'https://www.britannica.com/technology/X-1-airplane'
+            ]"
+        />
 
-    https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B - vanguard 1
-    első műhold, ami napelemeket használt
-    pályája Földtől legtábolabbi pontján majdnem 4000km-re van a bolygótól és 134 perc alatt tesz meg egy kört
-    2000 év keringést terveztek neki, de az atmoszféra fékező hatása és a napszél miatt manapság csak 240 évet
-    jósolnak neki (a kilövéstől számítva)
-    eredetileg a világon az első, majd Amerika első műholdjának szánták, ám egyik sem sikerült neki, a negyedik
-    műhold lett a világon
-    két rádióadó üzemelt benne, az egyik akkumulátorról ment, ez 3 hónap alatt lemerült, a másikat a napelemek
-    üzemeltették, ezek 1964-ig működtek, ezután már csak vizuálisan lehetett nyomon követni.
-    Tömege mindössze 1.46kg, sömb alakú alumínium burkolata 16.5cm átmérőjő,
-    ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58cm-es átmérőjéhez képest.
-    6 db 30cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
+        <!--
+            https://www.youtube.com/watch?v=v9h3mnCBQOI - sugárzás
+            elektromágneses sugárzás: test különböző hullámhosszokon energiát veszít, pl.: lámpa fénye
+            elektromágneses hullámok kibocsátása
+            infravörös hullámhossz -> hőként érzékelünk
 
-    https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B - szputnyik 3
-    1958 május 15 a szovjetek fellövik a Szputnyik 3-at a bajkonuri űrrepülőtérről.
-    A műhold fő feladata tudományos mérések elvégzése volt, egy önműködő laboratórium volt lényegében.
-    Többek között vizsgálta a (felsőbb?) légkör nyomását és összetételét, töltött részecskék koncentrációját
-    (más néven ionok, nekik köszönhető a sarki fény), a kozmikus sugárzást (első sorban Naprendszeren kívülről érkező
-    nagy energiájú részecskék, nem kozmikus háttérsugárzás!), a Föld mágneses terét.
-    Ő is vizsgálta az Explorer-1 műhold által már igazolt Van Allen öveket.
-    Fellövésekor messze a világ legnehezebb műholdjának számított az 1327kg-os súlyával, nehezebb volt, mint
-    az addig korábban fellőtt 5 műhold együtt.
-    A kúp alakú szerkezet magassága 3.57m, átmérője pedig 1.73m.
-    Pályája legtávolabbi pontján 1864km-re volt a Földtől és 106 perc alatt került meg.
-    A mért adatokat mágnesszalagra akarták menteni, hogy rögzítse a nem szovjet fennhatóság alatt álló területek
-    felett begyűjtött adatokat, ám a berendezés meghibásodott, így csak az adott pillanatban végzett méréseket tudták
-    lekérni, az adatok egy része elvszett.
-    A Szputnyik-3-al a kapcsolat június 3-án szakadt meg, és 1960 április 6-ig keringett az űrben.
+            atomból válnak ki részecskék, ez is sugárzás, ez a radioaktivitás
+            instabil atommag
+            ionizáló sugárzás, részecskék olyan nagy energiájúak, hogy egy tagy több elektront kilök az atommagból
+            alfa béta gamma sugárzás
+            sejtekben elvesztett elektronok -> szabad gyökök -> mindennel reakcióba lépnek, kémiai kötéseket tesznek tönkre
+            dns szakadás, kijavítja a sejt, nem javítja ki, de túléli (mutáció, rák), meghal a sejt
 
-    https://www.nasa.gov/history/60-years-ago-soviets-launch-sputnik-3/
-    A műhold főtervezője Szergej P. Koroljov volt, az űreszközt "Object D"-nek nevezte el ("D objektum")
-    IGY kapcsán lőtték fel, általánosságban tanulmányozni az atmoszféra felsőbb rétegeiben lévő állapotokat.
-    A mérnöknek régi vágya volt egy tudományos műhold űrbe jutattása, ám Hruscsov főtitkár majdnem kisiklatta
-    a terveket az Amerikaiakkal való versengés miatt.
-    Neki az volt a fontos, hogy minél hamarabb beelőzze a vetélytársat, így született meg kompromisszumként
-    a Szputnyik-1 és 2, amik egyszerűbb és gyorsabban elkészíthető műholdak voltak, majd miután meglett
-    az elsőbbség, engedélyt adott Koroljov-nak, hogy teljesítse be az álmát és fejezze be a Szputnyik-3-at.
-    A biztonság kedvéért egyből kettőt épített belőle a biztonság kedvéét.
-    Helyesen is tette, mivel április 27-én, az első próbálkozás során az indulás után 90 másodperccel
-    a hordozórakéta felrobbant. Irónikus, hogy a balesetet majdnem sértetlenül átvészelte a műhold,
-    viszont már a földön egy rövidzárlatt miatt kigyulladt és megsemmisült.
-    A május 15-ei kilövés így a tartalékkal történt, ami pedig sikerrel lezajlott.
+            2 fajta: elektromágneses és nukleáris sugárzás
+            gamma sugár: nagyon gyorsan oszcilláló, nagyon alacsony hullámhosszú elektromágneses hullám, röntgen fölötti
+            minden nukleáris sugárzás ionizáló, az elektromos sugárzás közül a legnagyobb elergiájúak
+            (ultraibolya nagyobb energiájú része, röntgen, gamma)
+            részecskék: elektronok, protonok, neutronok
 
-    Források:
-    https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B<br />
-    https://www.nasa.gov/history/sputnik/sputorig.html<br />
-    https://www.nasa.gov/history/explorer-1-overview/<br />
-    https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B<br />
-    https://nssdc.gsfc.nasa.gov/nmc/spacecraft/displayTrajectory.action?id=1958-004B<br />
-    https://www.nasa.gov/history/60-years-ago-soviets-launch-sputnik-3/<br />
-    https://atomfizika.elte.hu/akos/orak/mfszem/2020/mm.pdf
-    </div>
+            https://www.nasa.gov/history/nasa-goddards-beginnings-in-project-vanguard/
+            1955-ben indult a program, IGY-ben műholdat följuttatni
+            első 5 kilövés sikertelen, az emberek elégedetlenek, különösen a Szputnyik-1 sikere után.
+            March 17, 1958 siker, Vanguard-1 az űrbe kerül (az Explorer-1 után)
+            Jelenleg a Vanguard-1 a legidősebb műhöld az űrben, a kilövése után 240 évig kering
+            napelem?
+            a kezdeti kudarcok ellenére sok tapasztalatot szereztek a projekten dolgozók, amit a későbbi projekteken
+            sikerrel kamatoztattak
+
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B - vanguard 1
+            első műhold, ami napelemeket használt
+            pályája Földtől legtábolabbi pontján majdnem 4000km-re van a bolygótól és 134 perc alatt tesz meg egy kört
+            2000 év keringést terveztek neki, de az atmoszféra fékező hatása és a napszél miatt manapság csak 240 évet
+            jósolnak neki (a kilövéstől számítva)
+            eredetileg a világon az első, majd Amerika első műholdjának szánták, ám egyik sem sikerült neki, a negyedik
+            műhold lett a világon
+            két rádióadó üzemelt benne, az egyik akkumulátorról ment, ez 3 hónap alatt lemerült, a másikat a napelemek
+            üzemeltették, ezek 1964-ig működtek, ezután már csak vizuálisan lehetett nyomon követni.
+            Tömege mindössze 1.46kg, sömb alakú alumínium burkolata 16.5cm átmérőjő,
+            ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83ks-os súlyához és az 58cm-es átmérőjéhez képest.
+            6 db 30cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
+
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B - szputnyik 3
+            1958 május 15 a szovjetek fellövik a Szputnyik 3-at a bajkonuri űrrepülőtérről.
+            A műhold fő feladata tudományos mérések elvégzése volt, egy önműködő laboratórium volt lényegében.
+            Többek között vizsgálta a (felsőbb?) légkör nyomását és összetételét, töltött részecskék koncentrációját
+            (más néven ionok, nekik köszönhető a sarki fény), a kozmikus sugárzást (első sorban Naprendszeren kívülről érkező
+            nagy energiájú részecskék, nem kozmikus háttérsugárzás!), a Föld mágneses terét.
+            Ő is vizsgálta az Explorer-1 műhold által már igazolt Van Allen öveket.
+            Fellövésekor messze a világ legnehezebb műholdjának számított az 1327kg-os súlyával, nehezebb volt, mint
+            az addig korábban fellőtt 5 műhold együtt.
+            A kúp alakú szerkezet magassága 3.57m, átmérője pedig 1.73m.
+            Pályája legtávolabbi pontján 1864km-re volt a Földtől és 106 perc alatt került meg.
+            A mért adatokat mágnesszalagra akarták menteni, hogy rögzítse a nem szovjet fennhatóság alatt álló területek
+            felett begyűjtött adatokat, ám a berendezés meghibásodott, így csak az adott pillanatban végzett méréseket tudták
+            lekérni, az adatok egy része elvszett.
+            A Szputnyik-3-al a kapcsolat június 3-án szakadt meg, és 1960 április 6-ig keringett az űrben.
+
+            https://www.nasa.gov/history/60-years-ago-soviets-launch-sputnik-3/
+            A műhold főtervezője Szergej P. Koroljov volt, az űreszközt "Object D"-nek nevezte el ("D objektum")
+            IGY kapcsán lőtték fel, általánosságban tanulmányozni az atmoszféra felsőbb rétegeiben lévő állapotokat.
+            A mérnöknek régi vágya volt egy tudományos műhold űrbe jutattása, ám Hruscsov főtitkár majdnem kisiklatta
+            a terveket az Amerikaiakkal való versengés miatt.
+            Neki az volt a fontos, hogy minél hamarabb beelőzze a vetélytársat, így született meg kompromisszumként
+            a Szputnyik-1 és 2, amik egyszerűbb és gyorsabban elkészíthető műholdak voltak, majd miután meglett
+            az elsőbbség, engedélyt adott Koroljov-nak, hogy teljesítse be az álmát és fejezze be a Szputnyik-3-at.
+            A biztonság kedvéért egyből kettőt épített belőle a biztonság kedvéét.
+            Helyesen is tette, mivel április 27-én, az első próbálkozás során az indulás után 90 másodperccel
+            a hordozórakéta felrobbant. Irónikus, hogy a balesetet majdnem sértetlenül átvészelte a műhold,
+            viszont már a földön egy rövidzárlatt miatt kigyulladt és megsemmisült.
+            A május 15-ei kilövés így a tartalékkal történt, ami pedig sikerrel lezajlott.
+
+            Források:
+            https://www.youtube.com/watch?v=Tx8x1Oj7Q4g<br />
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B<br />
+            https://www.nasa.gov/history/sputnik/sputorig.html<br />
+            https://www.nasa.gov/history/explorer-1-overview/<br />
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-004B<br />
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/displayTrajectory.action?id=1958-004B<br />
+            https://www.nasa.gov/history/60-years-ago-soviets-launch-sputnik-3/<br />
+            https://atomfizika.elte.hu/akos/orak/mfszem/2020/mm.pdf<br />
+            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-001A<br />
+            https://www.nasa.gov/history/sputnik/expinfo.html<br />
+            https://www.nasa.gov/specials/60counting/begin.html<br />
+            https://www.britannica.com/technology/X-1-airplane
+        </div>-->
     </div>
     
 </template>

@@ -227,6 +227,20 @@
                 feljut a világűrbe, elsőként Amerikában.
             </p>
         </div>
+        
+        <ArticleSources
+            :sources="[
+                'https://www.youtube.com/watch?v=0cbcX66IZgc',
+                'https://www.nasa.gov/history/sputnik/sputorig.html',
+                'https://en.wikipedia.org/wiki/Sputnik_1',
+                'https://www.nasa.gov/image-article/sputnik-1/',
+                'https://en.wikipedia.org/wiki/R-7_(rocket_family)',
+                'https://en.wikipedia.org/wiki/Intercontinental_ballistic_missile',
+                'https://www.britannica.com/technology/V-2-rocket',
+                'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1957-001B',
+                'https://www.space.com/animals-in-space'
+            ]"
+        />
 
         <!-- https://www.nasa.gov/history/sputnik/sputorig.html
         A szputnyik fellövése megváltoztatta a hidegháború menetét.
@@ -310,23 +324,9 @@
         October 3, 1942-ban volt első sikeres kilövés
         először Párizst, majd Nagy-Britanniát és Belgiumot támadták vele
         14 méter magas, 12-13 tonnát nyomott
-        June 20, 1944 175km magasra lőtték, ez volt az első emberalkotta tárgy az űrben (nem állt földkörüli pályára
+        June 20, 1944 175km magasra lőtték, ez volt az első ember alkotta tárgy az űrben (nem állt földkörüli pályára
         csak űrugrás!)
         folyékony hajtóanyag -->
-
-        
-        <p class="fst-italic">
-            Források:<br />
-            https://www.youtube.com/watch?v=0cbcX66IZgc<br />
-            https://www.nasa.gov/history/sputnik/sputorig.html<br />
-            https://en.wikipedia.org/wiki/Sputnik_1<br />
-            https://www.nasa.gov/image-article/sputnik-1/<br />
-            https://en.wikipedia.org/wiki/R-7_(rocket_family)<br />
-            https://en.wikipedia.org/wiki/Intercontinental_ballistic_missile<br />
-            https://www.britannica.com/technology/V-2-rocket<br />
-            https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1957-001B<br />
-            https://www.space.com/animals-in-space
-        </p>
     </div>
 </template>
 

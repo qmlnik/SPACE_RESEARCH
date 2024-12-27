@@ -45,17 +45,8 @@
         margin: 0 0 1rem 1rem;
     }
 
-    &.article-image-full {
-        margin: 0 0 1rem 0;
-        width: 100%;
-
-        img {
-            width: 100%;
-        }
-    }
-
     @include media-breakpoint-down(sm) {
-        margin: 0 0 1rem 0;
+        margin: 0 0 1rem 0 !important;
         width: 100%;
     }
 

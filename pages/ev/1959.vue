@@ -147,30 +147,116 @@
             jelentősen eltér a két oldal látványa.
         </p>           
 
-        <figure class="article-image-container article-image-full figure" style="float: left;">
+        <p>
+            A Luna-3 1959 október 4-én startolt el a bajkonuri űrrepülőtérről.
+            A képek készítése mellett még tudományos feladata volt például a kozmikus sugárzás mérése
+            és a mikrometeorit becsapódások észlelése.
+            Október 7-én kb. 65 000 km-es távolságból
+            <span class="fw-bold">
+                az űrszonda elkészíti a történelemben az első képeket a Hold túloldaláról
+            </span>(összesen 29-et, de csak 17 érkezett meg), amik a túloldal 70%-át fedték le.
+            A művelet összesen 40 percet vett igénybe.
+            A mai fejlett eszközök híján a képek Földre juttatását egy igen körülményes megoldással oldották meg:
+            egy analóg kamera elkészítette a képet, amit egy automatikus rendszer előhívott, fixált és szárított,
+            majd egy szkenner beolvasta a fizikai képet és az adatokat továbbították a Földre.
+            A kamerának fix helyzete volt, így a pozícionálást az űrszonda forgatásával oldották meg,
+            a megfelelő irány megtalálása pedig egy fotocella feladata volt.
+            A hidegháború után a nyilvánosságra hozott dokumentumokból kiderült, hogy a felhasznált filmeket
+            egy szovjet terület fölé repült CIA kémballonból szerezték.
+            Ezek 35 mm-es filmek voltak, amik ellenáltak a hőmérsékletnek és a sugárzásnak, így a szovjet
+            tudósok alkalmasnak találták őket a küldetésre.
+            A képek rossz minősége ellenére nagy jelentőséggel bírtak, mivel így már tudtuk nagy vonalakban
+            milyen a Hold felszíne a sosem látható oldalán.
+            Az ábrán a Hold Földhöz közeli oldala, a Luna-3 egyik képe és a 2009-ben készített rekonstrukciója
+            látható, utóbbi a NASA által fellőtt Lunar Reconnaissance Orbiter (LRO) adatai alapján készült.
+        </p>   
+
+        <figure class="d-none d-md-block figure w-100" style="float: left;">
+            <div class="row d-flex align-items-center" style="background: black;">
+                <div class="col-sm-4">
+                    <img
+                        src="~/assets/images/article/1959/moon_near_side_article.webp"
+                        alt="a Hold Földhöz közeli oldala"
+                        class="w-100"
+                    />
+                </div>
+                <div class="col-sm-4">
+                    <img
+                        src="~/assets/images/article/1959/Luna_3_moon_article.webp"
+                        alt="a Luna-3 egyik képe a túloldaláról"
+                        class="w-100"
+                    />
+                </div>
+                <div class="col-sm-4">
+                    <img
+                        src="~/assets/images/article/1959/moon_far_side_article.webp"
+                        alt="a Luna képének 2009-es rekonstrukciója az LRO adatai által"
+                        class="w-100"
+                    />
+                </div>
+            </div>
+            <figcaption class="figure-caption text-center">
+                Balról jobbra: a Hold Földhöz közeli oldala, a Luna-3 egyik képe a túloldaláról
+                és a kép 2009-es rekonstrukciója az LRO adatai által
+            </figcaption>
+        </figure>
+        <figure class="d-md-none d-block figure w-100 mb-3" style="float: left;">
             <img
-                src="~/assets/images/article/1959/moon_near_far_side_comparison.webp"
-                alt="A Hold Föld felőli oldala (balra) és a túloldala (jobbra)"
-                style="max-width: 700px;"
+                src="~/assets/images/article/1959/moon_near_side_article.webp"
+                alt="a Hold Földhöz közeli oldala"
+                class="w-100"
             />
             <figcaption class="figure-caption text-center">
-                A Hold Föld felőli oldala (balra) és a túloldala (jobbra)
+                a Hold Földhöz közeli oldala
+            </figcaption>
+        </figure>
+        <figure class="d-md-none d-block figure w-100 mb-3" style="float: left;">
+            <img
+                src="~/assets/images/article/1959/Luna_3_moon_article.webp"
+                alt="a Luna-3 egyik képe a túloldaláról"
+                class="w-100"
+            />
+            <figcaption class="figure-caption text-center">
+                a Luna-3 egyik képe a túloldaláról
+            </figcaption>
+        </figure>
+        <figure class="d-md-none d-block figure w-100 mb-3" style="float: left;">
+            <img
+                src="~/assets/images/article/1959/moon_far_side_article.webp"
+                alt="a Luna képének 2009-es rekonstrukciója az LRO adatai által"
+                class="w-100"
+            />
+            <figcaption class="figure-caption text-center">
+                a Luna képének 2009-es rekonstrukciója az LRO adatai által
             </figcaption>
         </figure>
 
-        <figure class="article-image-container article-image-full figure" style="float: left;">
-            <img
-                src="~/assets/images/article/1959/luna3_compare.webp"
-                alt="Luna-3 egyik képe a Hold sosem látható oldaláról"
-                style="max-width: 700px;"
-            />
-            <figcaption class="figure-caption text-center">
-                Luna-3 és az LRO képe a Hold túloldaláról 1959-ből és 2009-ből
-            </figcaption>
-        </figure>
-
+        <div class="mb-3" style="float: left">
+            <p>
+                Az űrszonda henger alakú volt, egyik oldalán egy félgömbbel és egy széles karimával.
+                A súlya 278.5 kg, hossza 130 cm és a karimánál átmérője 120 cm.
+                A szonda akkumulátorait a sok oldalára erősített napelemmel töltötték.
+            </p>  
+            <p>Események időrendben:</p> 
+            <ol>
+                <li> kilövés után áthaladt a Föld északi sarka felett</li>
+                <li> október 6-án átrepült a Hold déli sarka felett, 6 200 km-re megközelítve azt</li>
+                <li> október 7-én elkészítette a képeket és elindult visszafele a Hold északi sarka felett áthaladva</li>
+                <li> október 18-ig továbbította a 17 képet a Földre</li>
+                <li> október 22-én megszakadt vele a kapcsolat.</li>
+            </ol>        
+            <p>A Föld légkörbe valamikor 1960 és 62 között zuhant vissza.</p>
+            <figure class="w-100 d-flex align-items-center flex-column figure">
+                <img
+                    src="~/assets/images/article/1959/luna_3_article.webp"
+                    alt="Luna-3"
+                    class="w-100"
+                    style="max-width: 600px;"
+                />
+                <figcaption class="figure-caption text-center">Luna-3</figcaption>
+            </figure>
+        </div>
         <!--https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-008A
-        első kép a hold túloldaláról
         hiába a Pink Floyd album, nincs a valóságban a Holdnak "sötét oldala", csak egy Földről sosem látható fele.
         Ezt a jelenséget kötött tengelyforgás okozza, vagyis hogy a Hold tengelyforgásának időtartama pontosan megegyezik
         a keringési idejével, ezért mindig ugyanazt az oldalát mutatja felénk.
@@ -183,7 +269,27 @@
         A tengerek a legnagyobb becsapódások nyomán jöttek létre, amik átszakították a kérget
         és a kiömlő láva kitöltötte őket, ettől sötétebb a színük.
         A Föld felőli oldalon a felszín 30%-át borítják tengerek, míg a túloldalt csak 3%,
-        jelentősen eltér a két oldal látványa.-->
+        jelentősen eltér a két oldal látványa.
+        
+        https://www.nasa.gov/history/60-years-ago-luna-2-makes-impact-in-moon-race/
+        1959 október 4-én startolt el a Luna-3 a bajkonuri űrrepülőtérről.
+        A képek készítése mellett még tudományos feladata volt például a kozmikus sugárzás mérése
+        és a mikrometeorit becsapódások észlelése.
+        Október 6-án a Hold déli sarkánál került a Luna-3 az égitest mögé a felszíntől majdnem 8 000 km-es magasságban.
+        Másnap több mint 65 000 km-es távolságból az űrszonda 29 képet készített a Hold túloldaláról, a művelet összesen
+        40 percet vett igénybe.
+        A mai fejlett eszközök híján a képek Földre juttatását egy igen körülményes megoldással oldották meg:
+        egy analóg kamera elkészítette a képet, amit egy automatikus rendszer előhívott, fixált és szárított,
+        majd egy szkenner beolvasta a fizikai képet és az adatokat továbbították a Földre.
+        A kamerának fix helyzete volt, így a pozícionálást az űrszonda forgatásával oldották meg,
+        a megfelelő irány megtalálása pedig egy fotocella feladata volt.
+        A hidegháború után a nyilvánosságra hozott dokumentumokból kiderült, hogy ezeket a filmeket
+        egy szovjet terület fölé repült CIA kémballonból szerezték.
+        A filmek 35 mm-es filmre készültek, amik ellenáltak a hőmérsékletnek és a sugárzásnak, így a szovjet
+        tudósok alkalmasnak találták őket a küldetésre.
+        A képek rossz minősége ellenére nagy jelentőséggel bírtak, mivel így már nagy vonalakban
+        milyen a Hold felszíne a sosem látható oldalán.
+        -->
         
         <ArticleSources
             :sources="[
@@ -197,8 +303,6 @@
                 'https://mek.oszk.hu/00500/00556/00556.htm#12'
             ]"
         />
-
-
     </div>
 </template>
 

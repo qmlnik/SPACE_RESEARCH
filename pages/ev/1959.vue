@@ -37,6 +37,14 @@
                         <td>Luna-2 becsapódása a Holdba</td>
                         <td>1959 szeptember 13. (14. moszkvai idő szerint)</td>
                     </tr>
+                    <tr>
+                        <td>Luna-3 kilövése</td>
+                        <td>1959 október 4.</td>
+                    </tr>
+                    <tr>
+                        <td>Első képek a Hold túloldaláról</td>
+                        <td>1959 október 7.</td>
+                    </tr>
                 </tbody>
             </table>
         </div>

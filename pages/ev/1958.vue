@@ -21,32 +21,34 @@
     />
     <div class="px-3 pb-3">
         <h2 class="mb-4">Fontosabb események</h2>
-        <table class="table table-bordered mb-5 text-light">
-            <thead>
-                <tr>
-                    <th style="width: 50%;">Esemény</th>
-                    <th style="width: 50%;">Dátum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Explorer-1 kilövés</td>
-                    <td>1958 január 31.</td>
-                </tr>
-                <tr>
-                    <td>Vanguard-1 kilövés</td>
-                    <td>1958 március 17.</td>
-                </tr>
-                <tr>
-                    <td>Szputnyik-3 kilövés</td>
-                    <td>1958 május 15.</td>
-                </tr>
-                <tr>
-                    <td>NASA megalapítása</td>
-                    <td>1958 július 29.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="article-table-container">
+            <table class="table table-bordered mb-5 text-light">
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Esemény</th>
+                        <th style="width: 50%;">Dátum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Explorer-1 kilövés</td>
+                        <td>1958 január 31.</td>
+                    </tr>
+                    <tr>
+                        <td>Vanguard-1 kilövés</td>
+                        <td>1958 március 17.</td>
+                    </tr>
+                    <tr>
+                        <td>Szputnyik-3 kilövés</td>
+                        <td>1958 május 15.</td>
+                    </tr>
+                    <tr>
+                        <td>NASA megalapítása</td>
+                        <td>1958 július 29.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h2 class="mb-4">Explorer-1, az első amerikai műhold</h2>
         <div class="mb-3" style="float: left">
@@ -91,7 +93,7 @@
             <p>
                 A műhold henger formájú, 2.03 m hosszú és 15.2 cm átmérőjű volt, 14 kg-ot nyomott
                 és 4 antennát helyeztek el rajta a közepén.
-                Földtől legtávolabbi pontján több mint 2500 km magasan járt és 115 perc alatt került meg a Földet.
+                Földtől legtávolabbi pontján több mint 2 500 km magasan járt és 115 perc alatt került meg a Földet.
                 Az adatok összeállítása lassú volt a periodikus jelkimaradások miatt.
                 Május 23-ig küldte az adatokat és 1970-ben semmisült meg az atmoszférába visszatérve.
             </p>
@@ -122,7 +124,7 @@
                 A Vanguard-1 tömege mindössze 1.46 kg, gömb alakú alumínium burkolata 16.5 cm átmérőjű,
                 ami értékek nagyságrendekkel kisebbek a Szputnyik-1 83 kg-os súlyához és az 58 cm-es átmérőjéhez képest.
                 Kommunikációra 6 db 30 cm-es antennája volt, amik szétszórtan helyezkedtek el a műholdon.
-                Pályája Földtől legtávolabbi pontján majdnem 4000 km magasan volt és 134 perc alatt tett meg egy kört.
+                Pályája Földtől legtávolabbi pontján majdnem 4 000 km magasan volt és 134 perc alatt tett meg egy kört.
                 Úgy számolták az indításakor, hogy 2000 évig fog keringeni az űrben, de az atmoszféra fékező
                 hatása és a napszél miatt manapság ezt 240 évre becsülik.
                 Annyi biztos, hogy jelenleg a Vanguard-1 a legrégebbi műhold az űrben.
@@ -179,7 +181,7 @@
                 Fellövésekor messze a világ legnehezebb műholdjának számított az 1327 kg-os súlyával, nehezebb volt, mint
                 az addig korábban fellőtt 5 műhold együtt.
                 A kúp alakú szerkezet magassága 3.57 m, átmérője pedig 1.73 m.
-                Pályája legtávolabbi pontján 1864 km-re volt a Földtől és 106 perc alatt kerülte meg.
+                Pályája legtávolabbi pontján 1 864 km-re volt a Földtől és 106 perc alatt kerülte meg.
                 A mért adatokat mágnesszalagra akarták menteni, hogy rögzítse a nem szovjet fennhatóság alatt álló területek
                 felett begyűjtött adatokat, ám a berendezés meghibásodott, így csak az adott pillanatban végzett méréseket
                 tudták lekérni, az adatok egy része elvszett.
@@ -204,7 +206,7 @@
                 1915-ben alapították a repüléstechnika fejlesztéséért, hogy behozzák a lemaradást az akkoriban fejlettebb
                 Európával szemben, az 50-es években viszont már neki kezdtek az űr témájú kutatásoknak.
                 Kutatási munkájuk közül az egyik leghíresebb az X-1 kísérleti rakétameghajtású repülő,
-                ami 1947-ben első repülőgépként átlépte a hangsebességet 1126 km/h-val, ami 1.06 Mach-nak felelt meg
+                ami 1947-ben első repülőgépként átlépte a hangsebességet 1 126 km/h-val, ami 1.06 Mach-nak felelt meg
                 (1 Mach = hangsebesség adott közegben).
                 Az szovjet sikerek által kiváltott sokkot enyhítették az Explorer-1 eredményei, de nem egészen.
                 Megszületett az igény egy új, állandó civil ügynökség létrehozására.

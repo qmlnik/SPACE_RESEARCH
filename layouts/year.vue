@@ -45,6 +45,15 @@
         margin: 0 0 1rem 1rem;
     }
 
+    &.article-image-full {
+        margin: 0 0 1rem 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         margin: 0 0 1rem 0;
         width: 100%;
@@ -52,6 +61,19 @@
 
     img {
         height: auto;
+    }
+}
+
+.article-table-container {
+    display: flex;
+    justify-content: center;
+
+    table {
+        max-width: 800px;
+
+        thead th {
+            width: 50%;
+        }
     }
 }
 </style>

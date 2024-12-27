@@ -21,36 +21,38 @@
     />
     <div class="px-3 pb-3">
         <h2 class="mb-4">Fontosabb események</h2>
-        <table class="table table-bordered mb-5 text-light">
-            <thead>
-                <tr>
-                    <th style="width: 50%;">Esemény</th>
-                    <th style="width: 50%;">Dátum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>V-2 a világűrben</td>
-                    <td>1944 június 20.</td>
-                </tr>
-                <tr>
-                    <td>Első sikeres ICBM kilövés</td>
-                    <td>1957 augusztus 21.</td>
-                </tr>
-                <tr>
-                    <td>Szputnyik-1 kilövés</td>
-                    <td>1957 október 4.</td>
-                </tr>
-                <tr>
-                    <td>Szputnyik-2 kilövés</td>
-                    <td>1957 november 3.</td>
-                </tr>
-                <tr>
-                    <td>Vanguard rakéta felrobbanása</td>
-                    <td>1957 december 7.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="article-table-container">
+            <table class="table table-bordered mb-5 text-light">
+                <thead>
+                    <tr>
+                        <th>Esemény</th>
+                        <th>Dátum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>V-2 a világűrben</td>
+                        <td>1944 június 20.</td>
+                    </tr>
+                    <tr>
+                        <td>Első sikeres ICBM kilövés</td>
+                        <td>1957 augusztus 21.</td>
+                    </tr>
+                    <tr>
+                        <td>Szputnyik-1 kilövés</td>
+                        <td>1957 október 4.</td>
+                    </tr>
+                    <tr>
+                        <td>Szputnyik-2 kilövés</td>
+                        <td>1957 november 3.</td>
+                    </tr>
+                    <tr>
+                        <td>Vanguard rakéta felrobbanása</td>
+                        <td>1957 december 7.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <h2 class="mb-4"> A V-2-től az űrkorszak kezdetéig</h2>
         <div class="mb-3" style="float: left">
             <figure class="article-image-container article-image-right figure">

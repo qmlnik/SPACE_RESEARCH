@@ -351,7 +351,7 @@
 
 <script setup>
 definePageMeta({
-    layout: "year"
+    layout: "article"
 });
 </script>
 

@@ -6,7 +6,7 @@
         <i class="bi bi-arrow-left-short fs-2" style="position: relative; top: 4px;"></i> Vissza
     </NuxtLink>
 
-    <article class="container bg-primary" style="min-height: 100%;">
+    <article class="container article-container" style="min-height: 100%;">
         <NuxtPage />
     </article>
 </template>
@@ -16,6 +16,17 @@
 
 <style lang="scss">
 @import "~/assets/bootstrap/variables";
+@import "~/node_modules/bootstrap/scss/functions";
+@import "~/node_modules/bootstrap/scss/variables";
+@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
+
+.article-container {
+    background: $primary;
+
+    @include media-breakpoint-down(md) {
+        background: transparent;
+    }
+}
 
 .back-button {
     background: $secondary;
@@ -25,9 +36,7 @@
     }
 }
 
-@import "~/node_modules/bootstrap/scss/functions";
-@import "~/node_modules/bootstrap/scss/variables";
-@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
+
 
 .article-image-container {
     margin: 0 0 1rem 1rem;

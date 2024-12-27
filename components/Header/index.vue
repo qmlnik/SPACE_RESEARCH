@@ -10,25 +10,27 @@
             style="opacity: 0;"
             ref="headerContainer"
         >
-            <HeaderPlanets
-                ref="headerPlanets"
-                @assets-loaded="isAssetsLoaded = true"
-            />
-            <div
-                v-if="isFinishedLoading"
-                class="header-title-container"
-            >
-                <h1 class="fw-normal">
-                    <TypingText
-                        text="űrkutatás katalógus"
-                        :is-header="true"
-                    />
-                </h1>
-            </div>
-            <div class="scroll-indicator-container">
-                <div class="scroll-indicator-arrow" style="margin-bottom: -3px;"></div>
-                <div class="scroll-indicator-arrow" style="animation-delay: 100ms"></div>
-            </div>
+            <ClientOnly>
+                <HeaderPlanets
+                    ref="headerPlanets"
+                    @assets-loaded="isAssetsLoaded = true"
+                />
+                <div
+                    v-if="isFinishedLoading"
+                    class="header-title-container"
+                >
+                    <h1 class="fw-normal">
+                        <TypingText
+                            text="űrkutatás katalógus"
+                            :is-header="true"
+                        />
+                    </h1>
+                </div>
+                <div class="scroll-indicator-container">
+                    <div class="scroll-indicator-arrow" style="margin-bottom: -3px;"></div>
+                    <div class="scroll-indicator-arrow" style="animation-delay: 100ms"></div>
+                </div>
+            </ClientOnly>
         </div>
     </div>
 </template>

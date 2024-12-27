@@ -73,9 +73,9 @@
                 Használata szerint nem nevezhetjük műholdnak, mivel nem kering egy bolygó körül sem,
                 a Hold felé tartó útján űrszondaként funkcionált (mivel az űrben végzett méréseket),
                 utána pedig mesterséges bolygóként, mivel Nap körüli pályára állt a Föld és a Mars között.
-                A küldetés célja az eszköz külső és belső hőmérsékletének mérése, az interplanetáris ködben
-                (égitestek közötti térben található anyag) található gáz halmazállapotú részecskék
-                és a Napból érkező nagy energiájú részecskék, a Föld és a Hold mágneses
+                A küldetés célja az űreszköz külső és belső hőmérsékletének mérése, az interplanetáris ködben
+                (égitestek közötti térben fellelhető anyag) található gáz halmazállapotú részecskék,
+                a Napból érkező nagy energiájú részecskék, a Föld és a Hold mágneses
                 tereinek, mikrometeorok és a kozmikus sugárzás vizsgálata.
             </p>
         </div>
@@ -98,9 +98,9 @@
                 a második kozmikus sebesség vagy szökési sebesség pedig ~40 000 km/h,
                 amivel már ki lehet szabadulni a bolygó vonzásából és el lehet indulni pl.: a Holdra
                 vagy a Marsra.
-                A Földtől 113 000 km-re 1 kg nátrium gázt engedtek ki a szondából, amivel egy narancssárgán
+                A Földtől 113 000 km-re 1 kg nátrium gázt engedtek ki a szondából, ami egy narancssárgán
                 izzó csíkot hagyott maga után, így a Földről is látni lehetett a nyomát
-                (az Indiai-Óceánról, nagyon haloványan).
+                (az Indiai-Óceánról, nagyon halványan).
             </p>
 
             <p>
@@ -126,7 +126,7 @@
                 csík maga után, Geiger-Müller-számláló, mikrometeorit detektor, stb...
                 Ami fontos eredmény, hogy ezúttal sikerült eltalálni a Holdat, így
                 <span class="fw-bold">
-                    a Luna-2 lett az első űreszköz, ami fizikai kontaktusba lépett egy másik égitestel.
+                    a Luna-2 lett az első űreszköz, ami fizikai kontaktusba lépett egy másik égitesttel.
                 </span>
                 Ezt a rádióadások hirtelen megszakadásából tudjuk.
                 Az adatok megerősítették a Luna-1 észlelését, miszerint a Holdnak nincs mágneses tere.
@@ -145,7 +145,7 @@
             megegyezik a keringési idejével, ezért mindig ugyanazt az oldalát mutatja felénk.
             Ez azt jelenti, hogy az égi kísérőnk pontosan 27,3 nap alatt tesz meg egy kört a Föld körül
             és a tengelye körül is pontosan 27,3 nap fordul meg.
-            Olyan a jelenség, mint a táncos, aki hiába köröz, mindig a partnere felé néz.
+            Olyan a jelenség, mint a táncos, aki keringőzése közben is mindig a partnere felé néz.
             A jelenség gyakorinak mondható Naprendszerünkben, ilyen még pl.: a Jupiter Europa holdja.
             Valójában a Holdnak kb. 59%-a látható a Földről, mivel időnként egyes oldalaira jobban rálátunk.
             Az égitest felszínét a világosabb felföldek és a sötétebb tengerek borítják.
@@ -153,7 +153,7 @@
             és a kiömlő láva kitöltötte őket, ettől sötétebb a színük.
             A Föld felőli oldalon a felszín 30%-át borítják tengerek, míg a túloldalt csak 3%,
             jelentősen eltér a két oldal látványa.
-        </p>           
+        </p>
 
         <p>
             A Luna-3 1959 október 4-én startolt el a bajkonuri űrrepülőtérről.
@@ -161,7 +161,7 @@
             és a mikrometeorit becsapódások észlelése.
             Október 7-én kb. 65 000 km-es távolságból
             <span class="fw-bold">
-                az űrszonda elkészíti a történelemben az első képeket a Hold túloldaláról
+                az űrszonda elkészítette a történelemben az első képeket a Hold túloldaláról
             </span>(összesen 29-et, de csak 17 érkezett meg), amik a túloldal 70%-át fedték le.
             A művelet összesen 40 percet vett igénybe.
             A mai fejlett eszközök híján a képek Földre juttatását egy igen körülményes megoldással oldották meg:
@@ -175,9 +175,9 @@
             tudósok alkalmasnak találták őket a küldetésre.
             A képek rossz minősége ellenére nagy jelentőséggel bírtak, mivel így már tudtuk nagy vonalakban
             milyen a Hold felszíne a sosem látható oldalán.
-            Az ábrán a Hold Földhöz közeli oldala, a Luna-3 egyik képe és a 2009-ben készített rekonstrukciója
+            Az ábrán a Hold Földhöz közeli oldala, a Luna-3 egyik képe és a 2009-ben róla készült rekonstrukció
             látható, utóbbi a NASA által fellőtt Lunar Reconnaissance Orbiter (LRO) adatai alapján készült.
-        </p>   
+        </p>
 
         <figure class="d-none d-md-block figure w-100" style="float: left;">
             <div class="row d-flex align-items-center" style="background: black;">
@@ -205,7 +205,7 @@
             </div>
             <figcaption class="figure-caption text-center">
                 Balról jobbra: a Hold Földhöz közeli oldala, a Luna-3 egyik képe a túloldaláról
-                és a kép 2009-es rekonstrukciója az LRO adatai által
+                és a kép 2009-ben róla készült rekonstrukció az LRO adatai által
             </figcaption>
         </figure>
         <figure class="d-md-none d-block figure w-100 mb-3" style="float: left;">
@@ -253,7 +253,7 @@
                 <li> október 18-ig továbbította a 17 képet a Földre</li>
                 <li> október 22-én megszakadt vele a kapcsolat.</li>
             </ol>        
-            <p>A Föld légkörbe valamikor 1960 és 62 között zuhant vissza.</p>
+            <p>A Föld légkörébe valamikor 1960 és 62 között zuhant vissza.</p>
             <figure class="w-100 d-flex align-items-center flex-column figure">
                 <img
                     src="~/assets/images/article/1959/luna_3_article.webp"

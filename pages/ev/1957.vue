@@ -68,7 +68,7 @@
                 A német V-2-es ("fau kettes", teljes nevén Vergeltungswaffe, „a megtorlás fegyvere”) rakéta egy
                 nagyon fontos lépcső volt az űrkutatás felvirágzásában.
                 Egy folyékony hajtóanyagú rakéta (etanol és víz keveréke), 14 méter magas és 12-13 tonnát nyomott.
-                Ez volt az első rakéta, ami átlépte a Kármán-vonalat (100km) és így kilépett a világűrbe (ez csak
+                Ez volt az első rakéta, ami átlépte a Kármán-vonalat (100 km) és így kilépett a világűrbe (ez csak
                 űrugrás volt, nem állt Föld körüli pályára, miután kifogyott az üzemanyagból egyszerűen visszazuhant!).
                 A történelmi repülés 1944 június 20-án történt a maga 175km-es csúcsmagasságával.
                 Sajnos a második világháború során egy nagy hatótávolságú fegyverként használták, ballisztikus pályán
@@ -97,7 +97,7 @@
                 rakéták kifejlesztésében, hanem hogy a hidegháborús céloknak megfelelően ballisztikus rakétáikkal
                 célba tudják juttatni az új atom- és hidrogénbombáikat.
                 Fontos mérföldkő volt az ICBM-ek (Intercontinental ballistic missile, interkontinentális ballisztikus rakéta)
-                kifejlesztése, ami azt jelenti, hogy a rakéta min. 5500km-es hatótávval rendelkezik.
+                kifejlesztése, ami azt jelenti, hogy a rakéta min. 5500 km-es hatótávval rendelkezik.
                 Több rakétacsalád is volt mindkét oldalon, amiket ICBM-nek terveztek, de végül űrkutatásban
                 továbbfejlesztve hordozórakétáknak is használták őket,
                 amerikai oldalon például Atlas, Redstone és Titan, szovjet oldalon R-7 és Proton.
@@ -152,7 +152,7 @@
                 lehetett határozni a helyzetét (ezen kívül csak alap adatokat közvetített magáról
                 pl.: saját hőmérséklete, komolyabb tudományos méréseket nem végzett).
                 A Kazaksztánban található bajkonuri űrrepülőtérről lőtték föl.
-                Elliptikus pályán keringett, a Földtől legtávolabbi szakaszánál több mint 900km magasan járt,
+                Elliptikus pályán keringett, a Földtől legtávolabbi szakaszánál több mint 900 km magasan járt,
                 a bolygót 96 percet kerülte meg.
             </p>
         </div>

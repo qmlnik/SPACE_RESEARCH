@@ -58,14 +58,14 @@ export default {
 @import "~/node_modules/bootstrap/scss/mixins/breakpoints";
 
 .header-container {
-    height: 300px;
+    height: 240px;
 
     @include media-breakpoint-down(lg) {
         height: 200px;
     }
 
     .header-image {
-        width: 40%;
+        width: 34%;
         transform: rotate(-10deg);
         transform-origin: right bottom;
         position: absolute;

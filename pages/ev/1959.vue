@@ -12,6 +12,11 @@
                 tablet: luna_3_tablet,
                 desktop: luna_3_desktop
             },
+            {
+                mobile: Pioneer_IV_mobile,
+                tablet: Pioneer_IV_tablet,
+                desktop: Pioneer_IV_desktop
+            }
         ]"
     />
     <div class="px-3 pb-3">
@@ -147,7 +152,8 @@
             és a tengelye körül is pontosan 27,3 nap fordul meg.
             Olyan a jelenség, mint a táncos, aki keringőzése közben is mindig a partnere felé néz.
             A jelenség gyakorinak mondható Naprendszerünkben, ilyen még pl.: a Jupiter Europa holdja.
-            Valójában a Holdnak kb. 59%-a látható a Földről, mivel időnként egyes oldalaira jobban rálátunk.
+            Valójában a Holdnak kb. 59%-a látható a Földről, mivel időnként egyes oldalaira jobban rálátunk
+            (van amikor kicsit az északira, van amikor kicsit az keletire, stb...).
             Az égitest felszínét a világosabb felföldek és a sötétebb tengerek borítják.
             A tengerek a legnagyobb becsapódások nyomán jöttek létre, amik átszakították a kérget
             és a kiömlő láva kitöltötte őket, ettől sötétebb a színük.
@@ -264,6 +270,41 @@
                 <figcaption class="figure-caption text-center">Luna-3</figcaption>
             </figure>
         </div>
+
+        <h2 class="mb-4">Az első Pioneer űrszondák</h2>
+        <div class="mb-3" style="float: left">
+            <figure class="article-image-container article-image-right figure">
+                <img
+                    src="~/assets/images/article/1959/Pioneer_IV_article.webp"
+                    alt="Pioneer-4"
+                />
+                <figcaption class="figure-caption text-center">Pioneer-4</figcaption>
+            </figure>
+            <p>
+                Hasonlóan a Luna-hoz, Amerikának is volt Hold kutató programja, a Pioneer.
+                Az első három űrszondát (Pioneer-0, 1 és 2) Hold körüli pályára tervezték állítani,
+                a Pioneer 3-at és 4-et pedig az égitest mellett akarták elvezetni (a későbbi űrszondálnak
+                már más volt a céljuk).
+                Az első Pioneer űrszondák nem voltak túl sikeresek, a Holdig sem jutottak el.
+                A Pioneer-0 hordozórakétája a felszállás után 77 másodperccel felrobbant,
+                a Pioneer-1 nem érte el a szökési sebességet, így vissza zuhant
+                (113 800 km magasra emelkedett, ami akkor, 1958 októberében rekordnak számított),
+                A Pioneer-2 harmadik fokozata nem gyulladt be, így csak 1 550 km-ig emelkedett.
+                A Pioneer-3 is visszazuhat 102 000 km-nél, viszont elsőként sikerült észlelnie a
+                külső Van Allen övet (két öv van, korábban csak a belsőről volt tudomásunk).
+            </p>
+            <p>
+                A Pioneer-4 volt az első sikeres kilövés, vagyis neki már sikerült elhagyni a Föld gravitációs
+                mezejét és megközelítenie a Holdat.
+                A kilövésre 1959 március 3-án került sor és másnap kevesebb mint 60 000 km-re megközelítette a célját.
+                Ez a tervezettnél messzebb volt, így a fotoelektromos szenzor nem érzékelte a Holdat,
+                így nem is készített képet.
+                Az űrszonda lett az első amerikai mesterséges bolygó, mivel a Hold elhagyása után
+                Nap körüli pályára állt (a Luna-1 ezt két hónappal korábban érte el).
+                Az űreszköznek kúp alakja volt, 6.1 kg-ot nyomott, magassága 51 cm és átmérője
+                23 cm volt.
+            </p>
+        </div>
         <!--https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-008A
         hiába a Pink Floyd album, nincs a valóságban a Holdnak "sötét oldala", csak egy Földről sosem látható fele.
         Ezt a jelenséget kötött tengelyforgás okozza, vagyis hogy a Hold tengelyforgásának időtartama pontosan megegyezik
@@ -308,7 +349,8 @@
                 'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-008A',
                 'https://svs.gsfc.nasa.gov/4109',
                 'https://hu.wikipedia.org/wiki/K%C3%B6t%C3%B6tt_tengelyforg%C3%A1s',
-                'https://mek.oszk.hu/00500/00556/00556.htm#12'
+                'https://mek.oszk.hu/00500/00556/00556.htm#12',
+                'https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-013A'
             ]"
         />
     </div>
@@ -329,6 +371,9 @@ import luna_3_mobile from "~/assets/images/article/1959/header/luna_3_mobile.web
 import luna_3_tablet from "~/assets/images/article/1959/header/luna_3_tablet.webp";
 import luna_3_desktop from "~/assets/images/article/1959/header/luna_3_desktop.webp";
 
+import Pioneer_IV_mobile from "~/assets/images/article/1959/header/Pioneer_IV_mobile.webp";
+import Pioneer_IV_tablet from "~/assets/images/article/1959/header/Pioneer_IV_tablet.webp";
+import Pioneer_IV_desktop from "~/assets/images/article/1959/header/Pioneer_IV_desktop.webp";
 </script>
 
 <style lang="scss">

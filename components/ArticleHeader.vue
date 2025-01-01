@@ -77,11 +77,11 @@ export default {
     }
 
     picture:nth-child(2) .header-image {
-        left: 35%;
+        left: 34%;
     }
 
     picture:nth-child(3) .header-image {
-        left: 70%;
+        left: 68%;
     }
 }
 </style>

@@ -35,6 +35,10 @@
                         <td>1959 január 2.</td>
                     </tr>
                     <tr>
+                        <td>Pioneer-4 kilövés</td>
+                        <td>1959 március 3.</td>
+                    </tr>
+                    <tr>
                         <td>Luna-2 kilövés</td>
                         <td>1959 szeptember 12.</td>
                     </tr>
@@ -73,7 +77,7 @@
                 több fémből készült embléma is volt rajta, amik a Szovjetúnió címerét ábrázolták.
                 Ez végül nem sikerült, "csak" 6 000 km-re tudta megközelíteni az égi kísérőnket
                 (a Föld-Hold távolság átlagosan 384 400 km/h),
-                utána elsuhant mellette és szintén a világon első mesterséges tárgyként pályára is állt
+                utána elsuhant mellette és szintén a világon első mesterséges bolygóként pályára is állt
                 a Nap körül.
                 Használata szerint nem nevezhetjük műholdnak, mivel nem kering egy bolygó körül sem,
                 a Hold felé tartó útján űrszondaként funkcionált (mivel az űrben végzett méréseket),
@@ -297,8 +301,8 @@
                 A Pioneer-4 volt az első sikeres kilövés, vagyis neki már sikerült elhagyni a Föld gravitációs
                 mezejét és megközelítenie a Holdat.
                 A kilövésre 1959 március 3-án került sor és másnap kevesebb mint 60 000 km-re megközelítette a célját.
-                Ez a tervezettnél messzebb volt, így a fotoelektromos szenzor nem érzékelte a Holdat,
-                így nem is készített képet.
+                Ez a tervezettnél messzebb volt, így a fotoelektromos szenzor nem érzékelte a Holdat
+                és nem is készített képet.
                 Az űrszonda lett az első amerikai mesterséges bolygó, mivel a Hold elhagyása után
                 Nap körüli pályára állt (a Luna-1 ezt két hónappal korábban érte el).
                 Az űreszköznek kúp alakja volt, 6.1 kg-ot nyomott, magassága 51 cm és átmérője

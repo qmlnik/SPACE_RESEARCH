@@ -69,7 +69,7 @@
     justify-content: center;
 
     table {
-        max-width: 800px;
+        max-width: 950px;
 
         thead th {
             width: 50%;

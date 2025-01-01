@@ -69,7 +69,8 @@
                 nagyon fontos lépcső volt az űrkutatás felvirágzásában.
                 Egy folyékony hajtóanyagú rakéta (etanol és víz keveréke), 14 méter magas és 12-13 tonnát nyomott.
                 Ez volt az első rakéta, ami átlépte a Kármán-vonalat (100 km) és így kilépett a világűrbe (ez csak
-                űrugrás volt, nem állt Föld körüli pályára, miután kifogyott az üzemanyagból egyszerűen visszazuhant!).
+                űrugrás vagy szuborbitális repülés volt, nem állt Föld körüli pályára, miután kifogyott az
+                üzemanyagból egyszerűen visszazuhant!).
                 A történelmi repülés 1944 június 20-án történt a maga 175km-es csúcsmagasságával.
                 Sajnos a második világháború során egy nagy hatótávolságú fegyverként használták, ballisztikus pályán
                 több száz kilóméterről lőtték először Párizst, majd Nagy-Britanniát és Belgiumot.

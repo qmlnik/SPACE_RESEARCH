@@ -1,12 +1,12 @@
 <template>
-    <p class="fst-italic" style="word-break: break-word;">
+    <div class="fst-italic" style="word-break: break-word;">
         Források:<br />
         <ul>
             <li v-for="source in sources">
                 <a :href="source" class="text-decoration-underline" target="_blank">{{ source }}</a>
             </li>
         </ul>
-    </p>
+    </div>
 </template>
 
 <script>
